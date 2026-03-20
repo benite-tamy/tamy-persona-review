@@ -69,6 +69,29 @@ const planos = [
     valueEq: 'Equivalente a 2h de contador — ROI de 8-15x para Beta ICPs',
     popular: true,
   },
+  {
+    name: 'Enterprise',
+    price: 'R$349,90',
+    period: '/mês + R$19,90/unidade extra',
+    badge: 'ICP Gamma — Multi-unidade',
+    badgeBg: 'bg-emerald-100 text-emerald-700',
+    color: 'border-emerald-500',
+    gradient: 'from-emerald-600 to-emerald-700',
+    tagline: 'Visão consolidada multi-unidade',
+    target: 'Mini-redes e franquias — 3–10+ unidades',
+    faturamento: 'R$400k–1,5M/mês',
+    features: [
+      'Tudo do Concierge +',
+      'Até 10 unidades incluídas',
+      'Visão consolidada de holding',
+      'Cada loja comparada em tempo real',
+      'Relatório cross-unit automatizado',
+      'API integrations customizadas',
+      'Dedicated success manager',
+    ],
+    cta: 'Controle total — cada unidade na palma da mão',
+    valueEq: 'Equivalente a um analista financeiro que nunca dorme',
+  },
 ]
 
 const cmvBenchmarks = [
@@ -150,9 +173,9 @@ export default function Mercado() {
       {/* PLANOS */}
       <div className="reveal">
         <h3 className="text-lg font-bold text-gray-900 mb-1">Nossos Planos</h3>
-        <p className="text-gray-500 text-sm mb-4">Dois planos em produção — self-service para Alpha, concierge para Beta</p>
+        <p className="text-gray-500 text-sm mb-4">Três planos em produção — self-service para Alpha, concierge para Beta, enterprise para Gamma</p>
 
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
           {planos.map(({ name, price, period, badge, badgeBg, color, gradient, tagline, target, faturamento, features, cta, valueEq, popular }) => (
             <div key={name} className={`card-elevated border-t-4 ${color} overflow-hidden`}>
               {popular && (
@@ -210,6 +233,152 @@ export default function Mercado() {
             <p className="font-bold text-emerald-900 text-sm">Garantia de 30 dias — sem perguntas</p>
             <p className="text-emerald-700 text-xs mt-1 leading-relaxed">
               Se em 30 dias a Tamy não trouxer clareza financeira ao seu restaurante, devolvemos 100% do investimento. Sem burocracia, sem processo. Essa garantia existe porque sabemos que o produto entrega — e porque o risco não pode ser do(a) dono(a) que já trabalha 18h/dia.
+            </p>
+          </div>
+        </div>
+
+        {/* Value Equation (Hormozi) */}
+        <div className="mt-6 reveal">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Equação de Valor (Hormozi)</h3>
+          <Panel style={{ background: '#111827', borderTop: '4px solid #3b82f6' }}>
+            <p className="text-white text-xs leading-relaxed mb-4 font-mono">
+              VALOR = (Dream Outcome × Perceived Likelihood) / (Time Delay × Effort & Sacrifice)
+            </p>
+            <div className="space-y-3 text-xs text-gray-200">
+              <div>
+                <strong className="text-blue-300">Essencial:</strong> Alto valor (sonho + confiança), esforço moderado, delay curto (ativa em D2-D3)
+              </div>
+              <div>
+                <strong className="text-blue-300">Concierge:</strong> Máximo valor (sonho + zero esforço), delay curto, sacrifice mínimo
+              </div>
+              <div>
+                <strong className="text-blue-300">Enterprise:</strong> Máximo valor consolidado + visão de holding, sacrifice zero (delegation)
+              </div>
+            </div>
+          </Panel>
+        </div>
+
+        {/* Bonus Stacks */}
+        <div className="mt-6 reveal">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">O que Vem em Cada Plano</h3>
+          <div className="space-y-3">
+            {/* Essencial Bonus Stack */}
+            <Panel className="border-t-4 border-purple-500">
+              <div className="mb-3">
+                <h4 className="font-bold text-gray-900 text-sm">Essencial — Inclusos:</h4>
+              </div>
+              <ul className="space-y-1.5">
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-purple-500 shrink-0 font-bold">✓</span>
+                  <span>Calculadora de CMV interativa</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-purple-500 shrink-0 font-bold">✓</span>
+                  <span>Benchmarks do setor (150+ indicadores)</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-purple-500 shrink-0 font-bold">✓</span>
+                  <span>Daily P&L Card no WhatsApp</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-purple-500 shrink-0 font-bold">✓</span>
+                  <span>Acesso à comunidade "Donos Inteligentes"</span>
+                </li>
+              </ul>
+            </Panel>
+
+            {/* Concierge Bonus Stack */}
+            <Panel className="border-t-4 border-blue-500">
+              <div className="mb-3">
+                <h4 className="font-bold text-gray-900 text-sm">Concierge — Tudo do Essencial +</h4>
+              </div>
+              <ul className="space-y-1.5">
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-blue-500 shrink-0 font-bold">✓</span>
+                  <span>Gerente de conta dedicado</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-blue-500 shrink-0 font-bold">✓</span>
+                  <span>Relatório mensal de fornecedores</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-blue-500 shrink-0 font-bold">✓</span>
+                  <span>Simulação de precificação personalizada</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-blue-500 shrink-0 font-bold">✓</span>
+                  <span>Onboarding guiado (setup completo pela equipe)</span>
+                </li>
+                <li className="flex gap-2 text-xs text-gray-700">
+                  <span className="text-blue-500 shrink-0 font-bold">✓</span>
+                  <span>Prioridade no suporte — atende em até 2h</span>
+                </li>
+              </ul>
+            </Panel>
+          </div>
+        </div>
+
+        {/* Positioning Note */}
+        <div className="mt-6 reveal rounded-2xl border border-amber-300 p-4"
+          style={{ background: 'linear-gradient(135deg, #fef3c7, #fcd34d)' }}>
+          <div className="space-y-2 text-xs text-amber-900">
+            <p>
+              <strong>"Toast+Ramp+Restoke+Duolingo"</strong> é como explicamos a visão para investidores e mercado tech.
+            </p>
+            <p>
+              Para o(a) dono(a) de restaurante, somos simplesmente: <strong>"Sua inteligência financeira no WhatsApp — saiba seu lucro real, reduza custos, tome decisões com dados."</strong>
+            </p>
+            <p className="pt-1 border-t border-amber-300">
+              Duas línguas, uma missão.
+            </p>
+          </div>
+        </div>
+
+        {/* Roadmap */}
+        <div className="mt-6 reveal">
+          <h3 className="text-lg font-bold text-gray-900 mb-3">Roadmap — 3 Passos</h3>
+
+          <div className="space-y-3">
+            <div className="flex gap-3 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-purple-600 text-white flex items-center justify-center text-xs font-bold">
+                1
+              </div>
+              <Panel className="flex-1 border-t-4 border-purple-500">
+                <h4 className="font-bold text-gray-900 text-sm mb-1">SaaS Inteligente (2026)</h4>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Ramp spending intelligence, OCR, Restoke food costing, Duolingo gamificação. WhatsApp-first.
+                </p>
+              </Panel>
+            </div>
+
+            <div className="flex gap-3 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-blue-600 text-white flex items-center justify-center text-xs font-bold">
+                2
+              </div>
+              <Panel className="flex-1 border-t-4 border-blue-500">
+                <h4 className="font-bold text-gray-900 text-sm mb-1">Plataforma Operacional (2027)</h4>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Restoke++ inventário/fornecedores, Ramp++ benchmarks, Duolingo++ comunidade. Data moat.
+                </p>
+              </Panel>
+            </div>
+
+            <div className="flex gap-3 items-start">
+              <div className="flex-shrink-0 w-8 h-8 rounded-full bg-emerald-600 text-white flex items-center justify-center text-xs font-bold">
+                3
+              </div>
+              <Panel className="flex-1 border-t-4 border-emerald-500">
+                <h4 className="font-bold text-gray-900 text-sm mb-1">Fintech + PDV (2028-29)</h4>
+                <p className="text-xs text-gray-600 leading-relaxed">
+                  Toast endgame: antecipação, crédito PJ, conta digital, PDV próprio.
+                </p>
+              </Panel>
+            </div>
+          </div>
+
+          <div className="mt-4 rounded-xl border border-gray-200 bg-gray-50 p-3">
+            <p className="text-xs text-gray-700 leading-relaxed">
+              <strong>Por quê:</strong> Toast gera 80%+ da receita em fintech. Ramp salva $16B+ via spending intelligence. Restoke elimina back-of-house manual. Duolingo retém 30M+ DAU com gamificação. <strong>Tamy combina as 4 forças.</strong>
             </p>
           </div>
         </div>

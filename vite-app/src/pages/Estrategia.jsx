@@ -185,6 +185,64 @@ export default function Estrategia() {
         ))}
       </div>
 
+      {/* WEEKLY TARGETS */}
+      <h3 className="text-lg font-bold text-gray-900 mb-1">Alvos Semanais — 20 Semanas → 100 Clientes</h3>
+      <p className="text-gray-500 text-sm mb-4">Progressão de 5 clientes/semana com mix de canais</p>
+
+      <div className="overflow-x-auto mb-6 reveal">
+        <table className="w-full text-xs border-collapse bg-white rounded-lg overflow-hidden shadow-sm">
+          <thead>
+            <tr className="bg-gray-100 border-b border-gray-200">
+              <th className="px-3 py-2 text-left font-bold text-gray-900">Semanas</th>
+              <th className="px-3 py-2 text-left font-bold text-gray-900">Fase</th>
+              <th className="px-3 py-2 text-center font-bold text-gray-900">Meta/Semana</th>
+              <th className="px-3 py-2 text-center font-bold text-gray-900">Cumulativo</th>
+              <th className="px-3 py-2 text-left font-bold text-gray-900">Foco</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr className="border-b border-gray-100 hover:bg-gray-50">
+              <td className="px-3 py-2 text-gray-700">1-4</td>
+              <td className="px-3 py-2"><span className="inline-block px-2 py-1 rounded bg-purple-100 text-purple-700 font-bold">Fase 1</span></td>
+              <td className="px-3 py-2 text-center text-gray-700">5</td>
+              <td className="px-3 py-2 text-center font-bold text-gray-900">20</td>
+              <td className="px-3 py-2 text-gray-600">Inner Circle (rede Pedro)</td>
+            </tr>
+            <tr className="border-b border-gray-100 hover:bg-gray-50">
+              <td className="px-3 py-2 text-gray-700">5-10</td>
+              <td className="px-3 py-2"><span className="inline-block px-2 py-1 rounded bg-blue-100 text-blue-700 font-bold">Fase 2</span></td>
+              <td className="px-3 py-2 text-center text-gray-700">5</td>
+              <td className="px-3 py-2 text-center font-bold text-gray-900">50</td>
+              <td className="px-3 py-2 text-gray-600">{"Referral + Conteúdo (K-factor > 1.5)"}</td>
+            </tr>
+            <tr className="border-b border-gray-100 hover:bg-gray-50">
+              <td className="px-3 py-2 text-gray-700">11-16</td>
+              <td className="px-3 py-2"><span className="inline-block px-2 py-1 rounded bg-amber-100 text-amber-700 font-bold">Fase 3</span></td>
+              <td className="px-3 py-2 text-center text-gray-700">5</td>
+              <td className="px-3 py-2 text-center font-bold text-gray-900">80</td>
+              <td className="px-3 py-2 text-gray-600">B2B2C (Contadores, Associações)</td>
+            </tr>
+            <tr className="hover:bg-gray-50">
+              <td className="px-3 py-2 text-gray-700">17-20</td>
+              <td className="px-3 py-2"><span className="inline-block px-2 py-1 rounded bg-green-100 text-green-700 font-bold">Fase 4</span></td>
+              <td className="px-3 py-2 text-center text-gray-700">5+</td>
+              <td className="px-3 py-2 text-center font-bold text-gray-900">100+</td>
+              <td className="px-3 py-2 text-gray-600">Paid Ads (Meta, Google)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <Panel className="reveal mb-8">
+        <h4 className="font-bold text-gray-900 mb-2">💡 Insight: Hormozi ($100M Leads)</h4>
+        <p className="text-xs text-gray-600 leading-relaxed mb-3">
+          <strong>Warm {">"} Cold.</strong> Começar com quem já confia (rede Pedro), expandir com referral, estruturar canais escaláveis (contadores), depois paid. Se referral funcionar (K-factor {">"}1.5), talvez paid nem seja necessário nos primeiros 6 meses.
+        </p>
+        <p className="text-xs text-gray-700 font-semibold leading-relaxed border-t pt-3 mt-3">
+          <strong>Janela de oportunidade:</strong> 12-18 meses antes que iFood/Saipos/Conta Azul acordem e lancem módulo financeiro similar. <strong>Velocidade {">"}perfeição.</strong>
+        </p>
+      </Panel>
+
       {/* RISCOS */}
       <h3 className="text-lg font-bold text-gray-900 mb-1">Riscos Existenciais — Pre-mortem Munger</h3>
       <p className="text-gray-500 text-sm mb-4">"Se a Tamy falhar em 2 anos, qual foi a causa?" — Charlie Munger</p>
@@ -203,40 +261,101 @@ export default function Estrategia() {
         ))}
       </div>
 
+      {/* PRÉ-MORTEM EXERCISE */}
+      <div className="bg-gray-900 text-white rounded-2xl p-5 md:p-6 mb-8 reveal">
+        <h3 className="text-lg font-bold mb-3">💀 Exercício de Pré-Mortem (Kahneman)</h3>
+        <p className="text-sm text-gray-300 mb-4">Imagine que é março de 2027 e a Tamy falhou. Qual foi a causa mais provável?</p>
+
+        <div className="space-y-3">
+          <div className="bg-gray-800 p-3 rounded-lg border-l-4 border-red-500">
+            <p className="text-xs font-bold text-red-300 mb-1">Cenário 1: Rejeição de Mercado</p>
+            <p className="text-xs text-gray-300">"Não conseguimos convencer restaurantes a pagar"</p>
+            <p className="text-xs text-gray-400 mt-1">→ <strong>Risco #1 é GTM, não técnico.</strong> Invista 80% em retenção D0-D7. Se não segura cliente em 1 semana, produto pode ser ótimo que não importa.</p>
+          </div>
+
+          <div className="bg-gray-800 p-3 rounded-lg border-l-4 border-yellow-500">
+            <p className="text-xs font-bold text-yellow-300 mb-1">Cenário 2: Churn Estrutural</p>
+            <p className="text-xs text-gray-300">"Conseguimos clientes mas todos cancelaram em 90 dias"</p>
+            <p className="text-xs text-gray-400 mt-1">→ <strong>Risco #1 é onboarding/aha moment.</strong> Foco em Customer Journey (D0-D30 é 80% do sucesso). Ativação D7 = 82% de acurácia em retenção D90.</p>
+          </div>
+
+          <div className="bg-gray-800 p-3 rounded-lg border-l-4 border-blue-500">
+            <p className="text-xs font-bold text-blue-300 mb-1">Cenário 3: Competição Acelerada</p>
+            <p className="text-xs text-gray-300">"Um incumbente lançou algo similar"</p>
+            <p className="text-xs text-gray-400 mt-1">{"→ "}<strong>Risco #1 é velocidade.</strong>{" Nunca competir em features — competir em velocidade de execução e go-to-market. Aprendizado + iteração rápida > produto perfeito."}</p>
+          </div>
+        </div>
+
+        <p className="text-xs font-bold text-gray-300 mt-4 pt-4 border-t border-gray-700">Saiba qual é o SEU risco principal e invista 80% da energia lá.</p>
+      </div>
+
       {/* HEALTH SCORE */}
       <h3 className="text-lg font-bold text-gray-900 mb-1">Health Score Framework</h3>
-      <p className="text-gray-500 text-sm mb-4">5 dimensões para prever churn antes que aconteça</p>
+      <p className="text-gray-500 text-sm mb-4">5 dimensões para prever churn antes que aconteça — Fórmula detalhada</p>
 
       <Panel className="reveal mb-4">
-        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+        <h4 className="font-bold text-gray-900 text-sm mb-3">Scoring Detalhado (Total 100 pontos)</h4>
+        <div className="space-y-2.5 mb-4">
           {[
-            { name: 'Frequência de uso', weight: '25%', desc: 'Interações com a IA nos últimos 7 dias', color: 'text-purple-600' },
-            { name: 'Profundidade de dados', weight: '25%', desc: 'Lançamentos realizados / benchmark do plano', color: 'text-blue-600' },
-            { name: 'Progresso financeiro', weight: '20%', desc: 'CMV caindo, margem subindo, caixa positivo', color: 'text-green-600' },
-            { name: 'Engajamento gamificado', weight: '15%', desc: 'Streak ativo, badges desbloqueados, Tamy Score', color: 'text-amber-600' },
-            { name: 'Satisfação (NPS proxy)', weight: '15%', desc: 'Respostas às pesquisas, tempo de resposta, abertura de emails', color: 'text-red-500' },
-          ].map(({ name, weight, desc, color }) => (
-            <div key={name} className="flex gap-2 p-2.5 bg-gray-50 rounded-xl">
-              <span className={`text-sm font-black ${color} w-10 shrink-0`}>{weight}</span>
-              <div>
-                <div className="text-xs font-bold text-gray-800">{name}</div>
-                <div className="text-xs text-gray-500">{desc}</div>
+            {
+              name: '1. Frequência de Uso',
+              pts: '30 pts',
+              desc: '0-1/semana = 0 pts | 2-3 = 15 pts | 4+ = 30 pts',
+              color: 'bg-purple-50 border-purple-200'
+            },
+            {
+              name: '2. Profundidade de Dados',
+              pts: '25 pts',
+              desc: 'Só P&L = 5 pts | P&L + CMV = 15 pts | 3+ módulos = 25 pts',
+              color: 'bg-blue-50 border-blue-200'
+            },
+            {
+              name: '3. Recência',
+              pts: '20 pts',
+              desc: '> 7 dias = 0 pts | 3-7 dias = 10 pts | < 3 dias = 20 pts',
+              color: 'bg-green-50 border-green-200'
+            },
+            {
+              name: '4. Completude',
+              pts: '15 pts',
+              desc: '< 30% dados = 0 pts | 30-70% = 8 pts | > 70% = 15 pts',
+              color: 'bg-amber-50 border-amber-200'
+            },
+            {
+              name: '5. Sentimento (NPS proxy)',
+              pts: '10 pts',
+              desc: 'Detractor = 0 pts | Passive = 5 pts | Promoter = 10 pts',
+              color: 'bg-red-50 border-red-200'
+            },
+          ].map(({ name, pts, desc, color }) => (
+            <div key={name} className={`border rounded-lg p-2.5 ${color}`}>
+              <div className="flex items-start justify-between mb-1">
+                <div className="font-bold text-xs text-gray-900">{name}</div>
+                <span className="font-black text-sm text-gray-700">{pts}</span>
               </div>
+              <div className="text-xs text-gray-600">{desc}</div>
             </div>
           ))}
         </div>
-        <div className="mt-4 grid grid-cols-2 sm:grid-cols-4 gap-2">
+
+        <h4 className="font-bold text-gray-900 text-sm mb-3 mt-4 pt-4 border-t">Tiers de Ação</h4>
+        <div className="space-y-2">
           {[
-            { tier: '🏆 Champion', range: '80-100', color: 'bg-green-100 text-green-700' },
-            { tier: '✅ Healthy', range: '60-79', color: 'bg-blue-100 text-blue-700' },
-            { tier: '⚠️ At Risk', range: '40-59', color: 'bg-amber-100 text-amber-700' },
-            { tier: '🚨 Critical', range: '0-39', color: 'bg-red-100 text-red-700' },
-          ].map(({ tier, range, color }) => (
-            <div key={tier} className={`${color} rounded-xl p-2 text-center`}>
-              <div className="text-xs font-bold">{tier}</div>
-              <div className="text-xs">{range} pts</div>
+            { tier: '80-100 🏆 Champion', action: 'Pedir referral, case study, upsell' },
+            { tier: '50-79 ✅ Healthy', action: 'Manter engajamento, educar features, monitorar' },
+            { tier: '30-49 ⚠️ At Risk', action: 'Email "perdemos você", call CS, intervenção proativa' },
+            { tier: '0-29 🚨 Critical', action: 'Call urgente Pedro (primeiros 100), diagnóstico gratuito, meta 0% sem intervenção em 48h' },
+          ].map(({ tier, action }) => (
+            <div key={tier} className="border rounded-lg p-2.5 bg-gray-50 flex gap-2">
+              <span className="font-bold text-xs text-gray-900 flex-1">{tier}</span>
+              <span className="text-xs text-gray-600 flex-1 text-right">{action}</span>
             </div>
           ))}
+        </div>
+
+        <div className="mt-4 p-3 bg-blue-50 rounded-lg border border-blue-200">
+          <p className="text-xs font-bold text-gray-900 mb-1">📊 Meta Benchmark</p>
+          <p className="text-xs text-gray-700"><strong>{"43% das perdas de clientes SMB acontecem nos primeiros 90 dias."}</strong>{" Health Score inverte isso: clientes > 50 em D30 → 95%+ retenção em D90."}</p>
         </div>
       </Panel>
 
@@ -247,30 +366,36 @@ export default function Estrategia() {
           <div className="flex gap-3 mb-3">
             <div className="w-11 h-11 rounded-xl bg-blue-500 flex items-center justify-center text-white font-black shrink-0">PS</div>
             <div>
-              <div className="font-bold text-gray-900">Pedro Smolka</div>
-              <div className="text-xs text-blue-600">CEO — Visão Operacional</div>
+              <div className="font-bold text-gray-900">Pedro Smolka — CEO & Co-Founder</div>
+              <div className="text-xs text-blue-600">Visão Operacional</div>
             </div>
           </div>
           <ul className="space-y-1.5 text-xs text-gray-600">
-            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>40+ restaurantes:</strong> viveu a dor em escala — gestor da Janela Bar (rede 40+ unidades, R$60M/ano)</span></li>
-            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Autoridade real:</strong> não é consultor teórico — é dono que virou o jogo com dados</span></li>
-            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Canal:</strong> Instagram, WhatsApp, webinars — audiência de donos de restaurante</span></li>
-            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Responsável por:</strong> GTM, vendas, CS, parcerias, conteúdo educativo</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Co-fundador Janela Bar:</strong> 40+ unidades, R$ 60M em 2026, expansão internacional</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Co-fundador Grupo Rua:</strong> holding de bares e restaurantes</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Sócio Soft Ice Cream:</strong> rede de sorveterias, 3 lojas</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>Fundador Mesa Boteco e A Martita:</strong> marmitaria pra mãe</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span><strong>VIVEU a dor na pele:</strong> 40+ anos em gastronomia operacional, escala real, decisões com dados</span></li>
+            <li className="flex gap-1.5"><span className="text-blue-400">•</span><span className="italic">"Eu sou o dono de restaurante que precisava da Tamy e ela não existia. Então eu criei."</span></li>
           </ul>
         </Panel>
         <Panel className="border-t-4 border-purple-500">
           <div className="flex gap-3 mb-3">
             <div className="w-11 h-11 rounded-xl bg-purple-600 flex items-center justify-center text-white font-black shrink-0">MB</div>
             <div>
-              <div className="font-bold text-gray-900">Matheus Benites</div>
-              <div className="text-xs text-purple-600">CTO — Dados e Produto</div>
+              <div className="font-bold text-gray-900">Matheus Benites — CTO & Co-Founder</div>
+              <div className="text-xs text-purple-600">Dados e Produto</div>
             </div>
           </div>
           <ul className="space-y-1.5 text-xs text-gray-600">
-            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>2 anos no setor:</strong> viveu operação de restaurante antes de construir o produto</span></li>
-            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Engenharia AI-first:</strong> LangGraph, 6 agentes, 111+ skills, 4-layer memory, Open Finance</span></li>
-            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Stack:</strong> React 19, NestJS, FastAPI, Go, Weaviate, Neo4j, RabbitMQ — Turborepo monorepo</span></li>
-            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Responsável por:</strong> produto, engenharia, dados, IA, infraestrutura, Open Finance</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>7+ anos eng. software:</strong> NuORDER/Lightspeed, Rock Content, Easy Carros</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Especialista em AI, LLMs, sistemas distribuídos, fintech</strong></span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Construiu Tamy desde o dia 0:</strong> 111+ skills, 6 agentes especializados (Finance 33+, Analytics 16+, Operations 11+, Menu 6+, Workflow 18+, General 3+), 150+ benchmarks, 254+ test files</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Arquitetou integração Open Finance (Pluggy):</strong> sync bancário automático</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>4-layer memory system:</strong> Working, Episodic, Semantic, Business</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>16 skills multimodais:</strong> processamento de documentos (OCR, áudio, PDF, planilhas)</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span><strong>Blog papode.dev,</strong> 6.900+ seguidores LinkedIn</span></li>
+            <li className="flex gap-1.5"><span className="text-purple-400">•</span><span className="italic">"Eu construo a tecnologia que torna acessível o que antes só rede grande tinha."</span></li>
           </ul>
         </Panel>
       </div>
