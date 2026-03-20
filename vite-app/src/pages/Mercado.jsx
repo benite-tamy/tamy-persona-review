@@ -147,6 +147,68 @@ export default function Mercado() {
         </div>
       </div>
 
+      {/* COMPETITIVE MAP */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">O que Seu Carlos Compara — 5 Alternativas Reais</h3>
+        <p className="text-gray-500 text-sm mb-4">Quando Carlos avalia a Tamy, ele não compara com o Saipos. Compara com o que usa hoje.</p>
+        <div className="overflow-x-auto card">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr className="border-b border-gray-200 bg-gray-50">
+                <th className="text-left p-3 font-bold text-gray-700">Alternativa</th>
+                <th className="text-left p-3 font-bold text-gray-700">Preço/mês</th>
+                <th className="text-left p-3 font-bold text-red-600">Por que falha para Carlos</th>
+                <th className="text-left p-3 font-bold text-green-600">Vantagem Tamy</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                {
+                  alt: '📓 Caderno + feeling (atual)',
+                  price: 'Grátis',
+                  fail: '2h/dia no fechamento manual. Zero insight. Descobre o problema 45 dias depois.',
+                  win: 'P&L automático no WhatsApp. 5min/dia. Insight no D1.',
+                },
+                {
+                  alt: '🧾 Contador mensalista',
+                  price: 'R$500–1.500/mês',
+                  fail: 'Entrega balancete 45 dias depois. Não fala food service. Não dá alerta proativo.',
+                  win: '3x mais barato. Tempo real. Benchmarks específicos por segmento.',
+                },
+                {
+                  alt: '💼 Conta Azul / Nibo',
+                  price: 'R$89–249/mês',
+                  fail: 'Genérico. Não entende CMV, não fala food. Dashboard complexo. Carlos abandona em semanas.',
+                  win: 'Especialista food service. WhatsApp (zero fricção). AI proativa.',
+                },
+                {
+                  alt: '📱 Saipos / PDV genérico',
+                  price: 'R$150–300/mês',
+                  fail: 'Foco operacional (pedidos, caixa). Não resolve P&L, margem real, CMV. Agora é do iFood.',
+                  win: 'Financeiro primeiro. "Qual prato dá lucro?" não "quantos pedidos hoje?"',
+                },
+                {
+                  alt: '📊 Planilha do YouTube',
+                  price: 'Grátis',
+                  fail: 'Carlos já tentou. Configuração complexa, abandona em 2 semanas. Dado morto.',
+                  win: 'Zero configuração. Foto no WhatsApp → dado lançado em 30s.',
+                },
+              ].map(({ alt, price, fail, win }, i) => (
+                <tr key={alt} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
+                  <td className="p-3 font-semibold text-gray-800">{alt}</td>
+                  <td className="p-3 text-gray-600 whitespace-nowrap">{price}</td>
+                  <td className="p-3 text-red-700 leading-relaxed">{fail}</td>
+                  <td className="p-3 text-green-700 leading-relaxed">{win}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
+        <div className="mt-3 rounded-xl border border-orange-200 bg-orange-50 p-3 text-xs text-orange-900">
+          <strong>⚠️ Risco iFood+Saipos (Abril 2025):</strong> iFood adquiriu a Saipos e agora tem acesso a 300k+ restaurantes cadastrados. Se lançarem módulo financeiro via Saipos nos próximos 18-24 meses, o canal de distribuição será o maior do setor. Defesa da Tamy: velocidade de PMF + data moat de clientes ativos + especialização financeira que PDV não replica.
+        </div>
+      </div>
+
       {/* CMV benchmarks */}
       <div className="reveal mb-6">
         <h3 className="text-lg font-bold text-gray-900 mb-1">Benchmarks de CMV por Segmento</h3>
@@ -167,6 +229,59 @@ export default function Mercado() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      {/* UNIT ECONOMICS */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Unit Economics — O Modelo Financeiro</h3>
+        <p className="text-gray-500 text-sm mb-4">Por que o negócio é defensável — LTV, CAC e payback calculados</p>
+
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-4">
+          {[
+            { label: 'LTV Essencial', value: 'R$3.798', sub: 'Churn 5%/mês → 20 meses avg', color: 'text-purple-600' },
+            { label: 'LTV Concierge', value: 'R$6.599', sub: 'Churn 3%/mês → ~33 meses avg', color: 'text-blue-600' },
+            { label: 'CAC alvo', value: '< R$500', sub: 'Orgânico < R$200, B2B2C < R$150', color: 'text-green-600' },
+            { label: 'Payback', value: '2–3 meses', sub: 'R$500 CAC ÷ R$189,90 = 2,6 meses', color: 'text-amber-600' },
+          ].map(({ label, value, sub, color }) => (
+            <div key={label} className="bg-white rounded-xl border border-gray-100 shadow-sm p-3 text-center">
+              <div className="text-xs text-gray-500 mb-1">{label}</div>
+              <div className={`text-xl font-black ${color}`}>{value}</div>
+              <div className="text-xs text-gray-400 mt-1 leading-tight">{sub}</div>
+            </div>
+          ))}
+        </div>
+
+        <div className="card overflow-hidden">
+          <div className="px-4 py-3 bg-gray-50 border-b border-gray-100">
+            <h4 className="font-bold text-gray-900 text-xs">Modelo de Churn — O Elefante na Sala</h4>
+          </div>
+          <div className="p-4 space-y-3 text-xs text-gray-600">
+            <div className="flex gap-3 items-start">
+              <span className="text-red-500 font-bold shrink-0">⚠️</span>
+              <div>
+                <strong className="text-gray-800">Involuntary churn estrutural:</strong> ~30% dos restaurantes fecham em 2 anos (~1,3%/mês de churn estrutural embutido). Isso não é falha do produto — é o mercado. Mas importa para o modelo.
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <span className="text-green-500 font-bold shrink-0">✓</span>
+              <div>
+                <strong className="text-gray-800">Defesa 1 — ICP com maior sobrevivência:</strong> Beta (R$100-400k/mês) tem taxa de sobrevivência 40% maior que Alpha. Concierge = mais estável.
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <span className="text-green-500 font-bold shrink-0">✓</span>
+              <div>
+                <strong className="text-gray-800">Defesa 2 — Tamy reduz a própria causa de churn:</strong> clientes que usam Tamy têm melhor controle financeiro → menor probabilidade de fechar. O produto que reduz seu próprio churn estrutural.
+              </div>
+            </div>
+            <div className="flex gap-3 items-start">
+              <span className="text-blue-500 font-bold shrink-0">→</span>
+              <div>
+                <strong className="text-gray-800">LTV:CAC alvo:</strong> Essencial 7,6x | Concierge 13,2x. SaaS saudável começa em 3x. Tamy está bem posicionado mesmo com churn estrutural.
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 

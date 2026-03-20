@@ -42,6 +42,7 @@ const icps = [
 
 const antiPersonas = [
   'Redes grandes (iFood, McDonald\'s) — já têm BI próprio',
+  'Food trucks e ambulantes — sem operação fixa, margem e fluxo imprevisíveis',
   'Catering/eventos — receita esporádica, não recorrente',
   'Bar sem cozinha (só bebida) — CMV diferente, menos complexidade',
   'Quem acha que "tá bem assim" — sem dor de gestão ativa',
@@ -196,6 +197,19 @@ export default function Personas() {
                 <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Linguagem de MBA/consultoria</span></li>
               </ul>
             </div>
+
+            {/* Tech Trauma */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🖥️ Trauma com Tecnologia</h4>
+              <div className="bg-amber-50 rounded-xl p-3 border border-amber-200">
+                <p className="text-xs text-gray-700 leading-relaxed mb-2">
+                  <strong>Já tentou 3 sistemas antes.</strong> Tentou o Saipos, uma planilha do YouTube, e um app de controle financeiro. Todos morreram em 2-3 semanas.
+                </p>
+                <p className="text-xs text-gray-700 leading-relaxed">
+                  <strong>Por que Tamy é diferente:</strong> não tem app para instalar, não tem login para lembrar, não tem dashboard novo para aprender. É o WhatsApp que ele já usa 50x/dia. A barreira de adoção é zero.
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -329,6 +343,91 @@ export default function Personas() {
                 <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>App novo pra instalar</span></li>
                 <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Dashboard tipo planilha de contador</span></li>
                 <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Vendedor homem explicando finanças</span></li>
+              </ul>
+            </div>
+
+            {/* Tech Trauma */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🖥️ Trauma com Tecnologia</h4>
+              <div className="bg-amber-50 rounded-xl p-3 border border-amber-200">
+                <p className="text-xs text-gray-700 leading-relaxed mb-2">
+                  <strong>Tentou 2 apps antes.</strong> Um app de marmitaria e o Trello para organizar produção. Ambos morreram em semanas — sem tempo para configurar, sem suporte, sem resultado visível.
+                </p>
+                <p className="text-xs text-gray-700 leading-relaxed">
+                  <strong>Por que Tamy é diferente:</strong> no Concierge, a <em>equipe</em> faz o setup. Márcia não precisa aprender nada. No D2 já tem o P&L pronto — ela nunca precisou digitar um dado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* CONTADOR-PARCEIRO */}
+      <div className="reveal mb-6">
+        <div className="card-elevated overflow-hidden">
+          <div className="p-4 md:p-5" style={{ background: 'linear-gradient(135deg, #064e3b, #065f46)' }}>
+            <div className="flex gap-3 items-center">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-xl font-black text-white shrink-0"
+                style={{ background: 'rgba(255,255,255,0.2)' }}>CP</div>
+              <div className="text-white">
+                <div className="inline-flex px-2 py-0.5 rounded-full bg-white/20 text-xs font-bold mb-1">Canal B2B2C</div>
+                <h3 className="text-lg md:text-xl font-black text-white">O Contador-Parceiro</h3>
+                <p className="text-emerald-200 text-sm">Roberto Almeida, 44 anos · São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 md:p-5">
+            <p className="text-sm font-bold text-gray-800 mb-3">Escritório Contábil Almeida — 280 clientes PME, 45 no food service</p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+              {[
+                { label: 'Clientes PME', value: '280' },
+                { label: 'Clientes food', value: '45' },
+                { label: 'Mensalidade média', value: 'R$800/cliente' },
+                { label: 'Modelo', value: 'B2B2C parceiro' },
+              ].map(({ label, value }) => (
+                <div key={label} className="bg-emerald-50 rounded-xl p-2.5 text-center">
+                  <div className="text-xs text-gray-500 mb-0.5">{label}</div>
+                  <div className="text-sm font-bold text-emerald-700">{value}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-3 mb-4 border-l-4 border-emerald-400">
+              <p className="text-xs text-gray-700 leading-relaxed italic">
+                Contador de PMEs há 18 anos. Especializou em food service por acidente — clientes de bar e restaurante são 30% dos seus contratos. Sabe que 60% deles vão fechar em 5 anos. Sofre toda virada de mês quando os clientes chegam com "a caixinha" de recibos desorganizados. Quer focar em advisory de alto valor mas fica preso no lançamento manual de dados.
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs mb-4">
+              <div className="bg-red-50 rounded-xl p-2.5 border border-red-100">
+                <div className="font-bold text-red-700 mb-1">😰 Dor Principal</div>
+                <p className="text-gray-600">Clientes chegam com caixinha de receita no dia 30. Passa 3 dias lançando dados em vez de fazer advisory. "Sou refém da desorganização dos meus clientes."</p>
+              </div>
+              <div className="bg-amber-50 rounded-xl p-2.5 border border-amber-100">
+                <div className="font-bold text-amber-700 mb-1">🏆 Sonho</div>
+                <p className="text-gray-600">Clientes chegam com dados prontos. Ele foca em estratégia tributária, planejamento, crescimento. Cobra mais por hora, trabalha menos.</p>
+              </div>
+              <div className="bg-emerald-50 rounded-xl p-2.5 border border-emerald-100">
+                <div className="font-bold text-emerald-700 mb-1">🔑 Por que indica Tamy</div>
+                <p className="text-gray-600">Reduz 60% do trabalho de lançamento. O cliente paga a Tamy, Roberto cobra por advisory. É ganha-ganha sem canibalizar receita.</p>
+              </div>
+            </div>
+
+            <div className="p-3 rounded-xl border-l-4 border-emerald-500 bg-emerald-50">
+              <p className="text-xs text-gray-700 italic font-semibold">
+                "Se meus clientes de restaurante usarem Tamy, eu paro de ser digitador e começo a ser consultor de verdade."
+              </p>
+            </div>
+
+            <div className="mt-4 bg-blue-50 rounded-xl p-3 border border-blue-100">
+              <h4 className="text-xs font-bold text-blue-800 mb-2">📊 Por que este canal é estratégico</h4>
+              <ul className="space-y-1 text-xs text-gray-700">
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">→</span><span>1 contador com 45 clientes food = 45 leads qualificados em 1 visita</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">→</span><span>Relacionamento de confiança já existe (cliente já paga R$800/mês pro contador)</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">→</span><span>CAC via B2B2C &lt; R$150 (vs. R$500 via paid)</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">→</span><span>Brasil tem ~120k contabilistas ativos — canal quase inexplorado por concorrentes</span></li>
               </ul>
             </div>
           </div>
