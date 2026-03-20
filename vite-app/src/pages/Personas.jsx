@@ -143,6 +143,59 @@ export default function Personas() {
                 <span key={t} className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs">{t}</span>
               ))}
             </div>
+
+            {/* Frase que Define */}
+            <div className="mt-4 p-3 rounded-xl border-l-4 border-purple-500 bg-purple-50">
+              <p className="text-xs text-gray-700 italic font-semibold">
+                "Eu sei que tem coisa errada, mas não tenho tempo de parar pra descobrir o quê."
+              </p>
+            </div>
+
+            {/* Medos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">😰 Medos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Não pagar folha no dia 5</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Perder o investimento de R$ 180k</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Descobrir que está no prejuízo</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Ter que fechar e voltar a ser empregado</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Ouvir "eu avisei" da esposa</span></li>
+              </ul>
+            </div>
+
+            {/* Sonhos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🏆 Sonhos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Abrir segunda unidade perto do estádio</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Folga no domingo pra levar filho no futebol</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Não precisar estar no bar pra funcionar</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Reformar a cozinha (equipamentos novos)</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Filho falar "pai, seu bar é demais"</span></li>
+              </ul>
+            </div>
+
+            {/* O que o Converte */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🔑 O que o Converte (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <span>Pedro falando a língua dele</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <span>Ver primeiro número real ("CMV 43%?!")</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <span>Foto do caderno = WhatsApp em 30s</span></li>
+                <li className="flex gap-2"><span className="text-blue-500 font-bold">✓</span> <span>R$ 189,90 é menos que perda semanal</span></li>
+              </ul>
+            </div>
+
+            {/* Anti-triggers */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">⛔ Anti-triggers (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Dashboard com 20 gráficos</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Email marketing corporativo</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>"Agende uma demo"</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Linguagem de MBA/consultoria</span></li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -225,6 +278,153 @@ export default function Personas() {
                 <span key={t} className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs">{t}</span>
               ))}
             </div>
+
+            {/* Frase que Define */}
+            <div className="mt-4 p-3 rounded-xl border-l-4 border-purple-500 bg-purple-50">
+              <p className="text-xs text-gray-700 italic font-semibold">
+                "Eu trabalho mais que qualquer um, mas no fim do mês não sei se sobrou alguma coisa pra mim."
+              </p>
+            </div>
+
+            {/* Medos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">😰 Medos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Não conseguir pagar as meninas</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Filhos perceberem o estresse</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Crescer e perder controle total</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>iFood aumentar comissão pra 30%+</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Ser "só a mulher da marmita"</span></li>
+              </ul>
+            </div>
+
+            {/* Sonhos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🏆 Sonhos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Ter espaço próprio (sair da garagem)</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Contratar gerente e sair às 15h</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Criar linha de marmitas fit</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Férias (3 dias na praia seria luxo)</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Provar que dá conta</span></li>
+              </ul>
+            </div>
+
+            {/* O que a Converte */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🔑 O que a Converte (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Outra dona mostrando que funciona</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>"Zero esforço" (não tem 1 minuto sobrando)</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Segurança: dados seguros, LGPD</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Pedro contando história da Martita</span></li>
+              </ul>
+            </div>
+
+            {/* Anti-triggers */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">⛔ Anti-triggers (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Linguagem condescendente</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>App novo pra instalar</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Dashboard tipo planilha de contador</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Vendedor homem explicando finanças</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* COMPARISON TABLE */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Comparação: Seu Carlos vs. Dona Márcia</h3>
+        <Panel className="overflow-x-auto">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr className="border-b border-gray-200">
+                <th className="text-left p-2.5 font-bold text-gray-700 bg-gray-50">Dimensão</th>
+                <th className="text-left p-2.5 font-bold text-blue-700 bg-blue-50">Seu Carlos</th>
+                <th className="text-left p-2.5 font-bold text-purple-700 bg-purple-50">Dona Márcia</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Idade/Contexto</td>
+                <td className="p-2.5 text-gray-600">41 anos, casado, 1 filho</td>
+                <td className="p-2.5 text-gray-600">36 anos, separada, 2 filhos (mãe solo)</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Negócio</td>
+                <td className="p-2.5 text-gray-600">Bar + petiscos</td>
+                <td className="p-2.5 text-gray-600">Marmitaria + delivery</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Faturamento</td>
+                <td className="p-2.5 text-gray-600">R$ 85k/mês</td>
+                <td className="p-2.5 text-gray-600">R$ 120k/mês</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Canal Principal</td>
+                <td className="p-2.5 text-gray-600">Balcão (75%) + iFood (25%)</td>
+                <td className="p-2.5 text-gray-600">iFood (40%) + WhatsApp direto (35%) + Presencial (25%)</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Maturidade Digital</td>
+                <td className="p-2.5 text-gray-600">Baixa (Android antigo, sem PDV)</td>
+                <td className="p-2.5 text-gray-600">Média (iPhone, Instagram ativo, Canva)</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Relação com Dinheiro</td>
+                <td className="p-2.5 text-gray-600">Mistura PF/PJ, "tiro o que preciso"</td>
+                <td className="p-2.5 text-gray-600">Trauma de dívida, paga tudo em dia mas sem reserva</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Motivação Principal</td>
+                <td className="p-2.5 text-gray-600">Autonomia + orgulho (ser dono)</td>
+                <td className="p-2.5 text-gray-600">Segurança dos filhos + provar que dá conta</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Plano Natural</td>
+                <td className="p-2.5 text-gray-600">Essencial (faz ele mesmo)</td>
+                <td className="p-2.5 text-gray-600">Concierge (zero tempo sobrando)</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Aha Moment Provável</td>
+                <td className="p-2.5 text-gray-600">CMV real vs. benchmark ("43%?!")</td>
+                <td className="p-2.5 text-gray-600">Margem iFood vs. salão ("3% vs. 22%?!")</td>
+              </tr>
+              <tr className="border-b border-gray-200 hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Medo #1</td>
+                <td className="p-2.5 text-gray-600">Ter que fechar e voltar a ser empregado</td>
+                <td className="p-2.5 text-gray-600">Não dar segurança pros filhos</td>
+              </tr>
+              <tr className="hover:bg-gray-50">
+                <td className="p-2.5 font-bold text-gray-700">Sonho #1</td>
+                <td className="p-2.5 text-gray-600">Abrir segunda unidade</td>
+                <td className="p-2.5 text-gray-600">Ter espaço próprio (sair da garagem)</td>
+              </tr>
+            </tbody>
+          </table>
+        </Panel>
+      </div>
+
+      {/* INSIGHT ESTRATÉGICO */}
+      <div className="reveal mb-6">
+        <div className="rounded-2xl p-4 md:p-5 border border-pink-200"
+          style={{ background: 'linear-gradient(135deg, #fdf2f8, #f3e8ff)' }}>
+          <h3 className="text-sm font-bold text-gray-900 mb-2">⚡ Insight Estratégico</h3>
+          <p className="text-xs text-gray-700 mb-4 leading-relaxed">
+            A <strong>Márcia é 52,7% do mercado</strong> e ninguém fala com ela. A maioria dos SaaS de restaurante tem UX, copy e marketing feito por homens, para homens. <strong>"Dona Márcia" não é nicho — é a MAIORIA.</strong>
+          </p>
+          <div className="space-y-1.5 text-xs text-gray-600">
+            <h4 className="font-bold text-gray-800 mb-2">5 Ações imediatas:</h4>
+            <ol className="space-y-1.5 ml-4">
+              <li className="flex gap-2"><span className="font-bold text-pink-600">1.</span> <span>Cases femininos no conteúdo desde D1</span></li>
+              <li className="flex gap-2"><span className="font-bold text-pink-600">2.</span> <span>Pedro conta a história da própria mãe (A Martita — marmitaria)</span></li>
+              <li className="flex gap-2"><span className="font-bold text-pink-600">3.</span> <span>Comunidade "Donas Inteligentes" como sub-grupo</span></li>
+              <li className="flex gap-2"><span className="font-bold text-pink-600">4.</span> <span>Copy sem viés: não é "ele" nem "ela" — é "dono(a)"</span></li>
+              <li className="flex gap-2"><span className="font-bold text-pink-600">5.</span> <span>Convidar fundadora mulher pra webinars e conteúdo colaborativo</span></li>
+            </ol>
           </div>
         </div>
       </div>

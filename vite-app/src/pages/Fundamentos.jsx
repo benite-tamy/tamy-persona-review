@@ -33,6 +33,61 @@ const agentes = [
   { name: 'General Agent', skills: '3+ skills', desc: 'Orquestração e fallback geral' },
 ]
 
+const fases = [
+  {
+    phase: 'Phase 1: 0–3 meses',
+    title: 'PMF',
+    isActive: true,
+    color: 'border-purple-500 bg-purple-50',
+    metrics: [
+      '50–100 clientes pagantes',
+      'NPS > 50',
+      'Churn compreendido (não só medido)',
+      '3–5 cases de sucesso',
+      'Canal + CAC real identificados',
+    ],
+  },
+  {
+    phase: 'Phase 2: 3–12 meses',
+    title: 'Tração',
+    isActive: false,
+    color: 'border-blue-500 bg-blue-50',
+    metrics: [
+      '300–500 clientes',
+      'CAC < R$ 400',
+      'Payback < 6 meses',
+      'Retenção > 95% (pós-90d)',
+      'Raise Seed R$ 3–5M',
+    ],
+  },
+  {
+    phase: 'Phase 3: 2–3 anos',
+    title: 'Escala',
+    isActive: false,
+    color: 'border-emerald-500 bg-emerald-50',
+    metrics: [
+      '10.000+ clientes',
+      'ARR R$ 45M+',
+      'Embedded finance',
+      'LTV/CAC > 3',
+      'Padrão de mercado BR',
+    ],
+  },
+  {
+    phase: 'Phase 4: 5–10 anos',
+    title: 'Visão',
+    isActive: false,
+    color: 'border-amber-500 bg-amber-50',
+    metrics: [
+      'Empresa R$ 1B+',
+      'Expansão LatAm',
+      'Fintech > SaaS receita',
+      '"Toast+Ramp+Restoke+Duolingo da LATAM"',
+      'Riqueza real pro time',
+    ],
+  },
+]
+
 export default function Fundamentos() {
   return (
     <div>
@@ -116,6 +171,46 @@ export default function Fundamentos() {
               <p className="text-gray-600 text-xs leading-relaxed">{desc}</p>
             </Panel>
           ))}
+        </div>
+      </div>
+
+      {/* Objetivos por Fase */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Objetivos por Fase</h3>
+        <p className="text-gray-500 text-sm mb-4">Roadmap de crescimento — de PMF a Visão em 10 anos</p>
+        <div className="overflow-x-auto pb-2">
+          <div className="flex gap-3 min-w-max">
+            {fases.map(({ phase, title, isActive, color, metrics }) => (
+              <div key={phase} className={`flex-shrink-0 w-72 rounded-2xl border-2 ${color} p-4`}
+                style={isActive ? { borderColor: '#a855f7', boxShadow: '0 0 0 3px rgba(168, 85, 247, 0.1)' } : {}}>
+                {isActive && (
+                  <div className="mb-2">
+                    <span className="inline-block px-2 py-1 rounded-full text-xs font-bold text-white bg-purple-600">
+                      ⭐ ACTIVE
+                    </span>
+                  </div>
+                )}
+                <div className="mb-2">
+                  <div className="text-xs font-semibold text-gray-500">{phase}</div>
+                  <div className="text-lg font-black text-gray-900">{title}</div>
+                </div>
+                <ul className="space-y-1">
+                  {metrics.map(metric => (
+                    <li key={metric} className="flex gap-2 text-xs text-gray-700">
+                      <span className="text-gray-400 shrink-0">→</span>
+                      <span>{metric}</span>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-4 rounded-xl border border-amber-200 bg-amber-50 p-3">
+          <p className="text-xs text-amber-900 leading-relaxed">
+            <strong>Nota crítica:</strong> Food service tem involuntary churn embutido (~30% fecham em 2 anos = ~1,3%/mês de churn estrutural). Churn &lt; 5%/mês nesse setor é mais difícil do que parece.
+          </p>
         </div>
       </div>
 
