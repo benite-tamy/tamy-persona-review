@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mercado & Planos — Start Growth | Tamy Food</title>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.1/chart.umd.min.js"></script>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="hero">
+  <h1>Missão 2: Persona Unificada</h1>
+  <p class="subtitle">Start Growth Academy | Março 2026 | Tamy Food — Toast + Ramp + Restoke + Duolingo para gastronomia na LATAM</p>
+  <p style="color:#E2E8F0;font-size:0.95rem;margin-top:8px;font-weight:600;">Para o(a) dono(a) de restaurante: Inteligência financeira no WhatsApp. Saiba o lucro real, reduza custos, tome decisões com dados — em 5 minutos por dia.</p>
+  <div class="badges">
+    <div class="badge badge-pedro"><span class="dot"></span> Pedro Smolka — CEO (Visão Operacional)</div>    <div class="nav-sticky">
+      <div class="nav-inner">
+        <a href="index.html" class="nav-btn ">🏠 Hub</a>
+        <a href="fundamentos.html" class="nav-btn ">Fundamentos</a>
+        <a href="personas.html" class="nav-btn ">Personas</a>
+        <a href="12-perguntas.html" class="nav-btn ">12 Perguntas</a>
+        <a href="dados-mercado.html" class="nav-btn active">Mercado & Planos</a>
+        <a href="sexy-canvas.html" class="nav-btn " style="background:#FEE2E2;color:#DC2626;border-color:#FCA5A5;">🔥 Sexy Canvas</a>
+        <a href="estrategia.html" class="nav-btn " style="background:#D1FAE5;color:#059669;border-color:#6EE7B7;">🚀 Estratégia</a>
+      </div>
+    </div>
+<div class="container">
+<div class="section reveal" id="mercado">
+  <div class="section-header">
+    <span class="section-number">DADOS COMPARTILHADOS</span>
+    <h2 class="section-title">Dados de Mercado</h2>
+    <p class="section-desc">Fontes verificadas — ABRASEL, SEBRAE, IFB, DataReportal</p>
+  </div>
+  <div class="chart-grid">
+    <div class="chart-card">
+      <h3>Mercado Food Service Brasil</h3>
+      <canvas id="chartMercado"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>CMV Ideal por Segmento</h3>
+      <canvas id="chartCMV"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Sobrevivência de Restaurantes</h3>
+      <canvas id="chartSobrevivencia"></canvas>
+    </div>
+    <div class="chart-card">
+      <h3>Perfil Digital do ICP</h3>
+      <canvas id="chartDigital"></canvas>
+    </div>
+  </div>
+  <table class="data-table">
+    <thead>
+      <tr><th>Dado</th><th>Valor</th><th>Fonte</th></tr>
+    </thead>
+    <tbody>
+      <tr><td>Faturamento food service BR</td><td><strong>R$ 495B/ano (2025)</strong></td><td>ABRASEL</td></tr>
+      <tr><td>Estabelecimentos ativos</td><td><strong>1,8M+</strong></td><td>ABRASEL 2025</td></tr>
+      <tr><td>Independentes</td><td><strong>77% do total</strong></td><td>ABRASEL</td></tr>
+      <tr><td>Empregos diretos</td><td><strong>4,9M (7,9% dos formais)</strong></td><td>ABRASEL</td></tr>
+      <tr><td>Inadimplência no setor</td><td><strong>41%</strong></td><td>ABRASEL</td></tr>
+      <tr><td>Fecham em 2 anos</td><td><strong>~30%</strong></td><td>SEBRAE</td></tr>
+      <tr><td>Fecham em 5 anos</td><td><strong>~62,7%</strong></td><td>SEBRAE</td></tr>
+      <tr><td>Margem líquida média</td><td><strong>~10% (ideal: 10-20%)</strong></td><td>SEBRAE/Mercado</td></tr>
+      <tr><td>Operam como MEI</td><td><strong>68%</strong></td><td>Food Connection</td></tr>
+      <tr><td>WhatsApp no Brasil</td><td><strong>169M+ usuários</strong></td><td>DataReportal 2025</td></tr>
+      <tr><td>Delivery crescimento 2025</td><td><strong>+11%</strong></td><td>IFB</td></tr>
+      <tr><td>Transações delivery digitais</td><td><strong>74%</strong></td><td>IFB</td></tr>
+      <tr><td>Empresas food service lideradas por mulheres</td><td><strong>52,7%</strong></td><td>ABRASEL 2025</td></tr>
+      <tr><td>Delivery/marmitarias lideradas por mulheres</td><td><strong>67,34%</strong></td><td>ABRASEL 2025</td></tr>
+    </tbody>
+  </table>
+</div>
+
+<!-- PLANOS -->
+
+<div class="section reveal" id="planos">
+  <div class="section-header">
+    <span class="section-number">PLANOS EM PRODUÇÃO</span>
+    <h2 class="section-title">Nossos Planos</h2>
+    <p class="section-desc">Sem limitação por feature — diferenciação por nível de serviço e escala</p>
+  </div>
+  <div class="plan-grid">
+    <div class="plan-card">
+      <div class="plan-name">Essencial</div>
+      <div class="plan-price">R$ 189,90<span>/mês</span></div>
+      <div class="plan-desc">Você no controle. Manda mensagem pra Tamy, preenche dados, usa o sistema. A IA trabalha 24/7 analisando, alertando e sugerindo. Você executa.</div>
+    </div>
+    <div class="plan-card featured">
+      <div class="plan-name">Concierge</div>
+      <div class="plan-price">R$ 549,90<span>/mês</span></div>
+      <div class="plan-desc">Zero esforço. Nossa equipe preenche, valida e organiza tudo pra você. Só recebe relatórios no WhatsApp e email. Entra no sistema pra olhar, não pra trabalhar.</div>
+    </div>
+    <div class="plan-card">
+      <div class="plan-name">Enterprise</div>
+      <div class="plan-price">R$ 349,90<span>/mês</span></div>
+      <div class="plan-desc">Multi-unidade: até 10 unidades incluídas + R$ 19,90/unidade extra. Tudo do Concierge com visão consolidada de holding. Cada loja comparada em tempo real.</div>
+    </div>
+  </div>
+
+  <!-- VALUE EQUATION -->
+  <div class="value-eq">
+    <p><strong>VALOR</strong> = (Dream Outcome × Perceived Likelihood) / (Time Delay × Effort & Sacrifice)</p>
+    <div style="margin-top: 16px; font-size: 0.85rem; color: var(--gray); line-height: 1.8;">
+      <div><strong style="color: var(--success);">Essencial:</strong> Alto valor (sonho + confiança), esforço moderado, delay curto (ativa em D2-D3)</div>
+      <div><strong style="color: var(--success);">Concierge:</strong> Máximo valor (sonho + zero esforço), delay curto, sacrifice mínimo</div>
+      <div><strong style="color: var(--success);">Enterprise:</strong> Máximo valor consolidado + visão de holding, sacrifice zero (delegation)</div>
+    </div>
+  </div>
+
+  <!-- GUARANTEE BOX -->
+  <div class="guarantee-box">
+    <strong>🛡️ Garantia Tamy 30 Dias</strong>
+    <p>Se você não identificar pelo menos UMA oportunidade de economia de R$ 200/mês nos primeiros 30 dias, devolvemos 100% do valor. <br><br>Por quê? Hormozi provou que garantias AUMENTAM conversão (menos fricção de decisão). Nós temos certeza que você vai encontrar economia real em 30 dias. Se não achar, a Tamy não merecia sua grana.</p>
+  </div>
+
+  <!-- BONUS STACKS -->
+  <div style="margin-top: 24px;">
+    <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;">Bônus por Plano</h3>
+
+    <div style="margin-bottom: 24px;">
+      <div style="font-weight:700;color:var(--dark);margin-bottom:8px;">📦 Essencial inclui:</div>
+      <div class="bonus-stack">
+        <div class="bonus-item">Calculadora de CMV interativa — descubra seu custo real em 2 min</div>
+        <div class="bonus-item">Benchmarks do setor (150+ indicadores) — compare-se com pares</div>
+        <div class="bonus-item">Daily P&L Card no WhatsApp — seu resultado na manhã do próximo dia</div>
+        <div class="bonus-item">Acesso à comunidade "Donos Inteligentes" — rede de restaurantes Tamy</div>
+      </div>
+    </div>
+
+    <div style="margin-bottom: 24px;">
+      <div style="font-weight:700;color:var(--dark);margin-bottom:8px;">🎁 Concierge inclui (TUDO DO ESSENCIAL +):</div>
+      <div class="bonus-stack">
+        <div class="bonus-item">Gerente de conta dedicado — seu operador de dados pessoal</div>
+        <div class="bonus-item">Relatório mensal de fornecedores — oportunidades de negociação</div>
+        <div class="bonus-item">Simulação de precificação personalizada — "se elevar 8%, quanto ganha?"</div>
+        <div class="bonus-item">Onboarding guiado (setup completo pela equipe) — zero fricção</div>
+        <div class="bonus-item">Prioridade no suporte — atende em até 2h</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- POSITIONING NOTE -->
+  <div style="margin-top:16px;padding:14px 18px;background:#FFF7ED;border-radius:8px;border:1px solid #FED7AA;font-size:0.78rem;color:#9A3412;">
+    <strong>📌 Nota de Posicionamento:</strong> "Toast+Ramp+Restoke+Duolingo" é como explicamos a visão para investidores e mercado tech. Para o(a) dono(a) de restaurante, somos simplesmente: <strong>"Sua inteligência financeira no WhatsApp — saiba seu lucro real, reduza custos, tome decisões com dados."</strong> Duas línguas, uma missão.
+  </div>
+
+  <div class="shared-panel" style="margin-top:24px;">
+    <p class="summary-label">Visão de Futuro</p>
+    <p style="font-size:0.88rem;">Tiramos as pessoas e deixamos 100% IA recebendo, preenchendo, automatizando e gerenciando tudo. Gerentes de conta viram suporte/CS. Modelo Toast+Ramp+Restoke+Duolingo: SaaS inteligente (Ramp spending intelligence + Restoke ops) → Plataforma gamificada (Duolingo engagement) → Fintech completa (Toast endgame) → PDV integrado (futuro).</p>
+  </div>
+  <!-- Roadmap visual -->
+  <div style="margin-top:32px;">
+    <h3 style="font-size:1rem;font-weight:700;margin-bottom:16px;text-align:center;">Roadmap Tamy — Toast + Ramp + Restoke + Duolingo</h3>
+    <div class="roadmap">
+      <div class="roadmap-step active">
+        <div class="roadmap-dot">1</div>
+        <h4>SaaS Inteligente (2026)</h4>
+        <p><strong>Ramp:</strong> Spending intelligence, OCR, auto-categorização. <strong>Restoke:</strong> Food costing, receitas, prep. <strong>Duolingo:</strong> Streaks, gamificação, hábito diário. WhatsApp-first, 111+ skills, 6 agentes.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="roadmap-dot">2</div>
+        <h4>Plataforma Operacional (2027)</h4>
+        <p><strong>Restoke++:</strong> Inventário, fornecedores, integrações POS. <strong>Ramp++:</strong> Benchmarks de rede, coaching diagnóstico. <strong>Duolingo++:</strong> Comunidade, rankings, achievements. Data moat consolidado.</p>
+      </div>
+      <div class="roadmap-step">
+        <div class="roadmap-dot">3</div>
+        <h4>Fintech + PDV (2028-29)</h4>
+        <p><strong>Toast endgame:</strong> Antecipação de recebíveis, crédito PJ, conta digital, pagamentos integrados. <strong>PDV próprio</strong> como extensão natural — captura 100% do fluxo transacional.</p>
+      </div>
+    </div>
+    <p style="text-align:center;font-size:0.78rem;color:var(--gray);margin-top:12px;">Toast gera 80%+ da receita em fintech. Ramp salva $16B+ para clientes via spending intelligence. Restoke elimina back-of-house manual. Duolingo retém 30M+ DAU com gamificação. Tamy combina as 4 forças.</p>
+  </div>
+</div>
+
+<!-- PERSONAS -->
+    </div>
+</body>
+</html>
