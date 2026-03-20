@@ -6,18 +6,18 @@ const valores = [
   { title: 'AI que age, não só reporta', desc: 'Não é dashboard bonito. É copilot proativo como Ramp: spending intelligence automatizada, insights prescritivos, gamificação Duolingo. "Seu CMV subiu 4% — quer ver o que mudou?"', color: 'border-purple-500' },
   { title: 'Obsessão pelo(a) dono(a) independente', desc: 'O cara que acorda 5h e dorme 1h. A mãe solo que acorda 5h pra levar filho na escola. Todo produto passa pelo filtro: "facilita a vida DELA? E DELE?"', color: 'border-emerald-500' },
   { title: 'Verdade brutal com compaixão', desc: '"Você está perdendo R$3.200/mês nesse prato." Mas sempre com o caminho: "Se ajustar o preço em 12%, a margem volta."', color: 'border-amber-500' },
-  { title: 'Engenharia como vantagem competitiva', desc: 'AI-first de verdade — 111+ skills, 6 agentes, 254+ test files, 4-layer memory. Profundidade técnica que incumbentes não copiam em 12 meses.', color: 'border-red-500' },
+  { title: 'Engenharia como vantagem competitiva', desc: 'AI-first de verdade — 79+ skills, 6 agentes, 2.210+ testes, 4-layer memory. Profundidade técnica que incumbentes não copiam em 12 meses.', color: 'border-red-500' },
   { title: 'Velocidade > Perfeição', desc: 'Ship rápido, aprenda rápido, corrija rápido. 80% no mercado > 100% na garagem. Nosso risco é execução comercial, não técnica.', color: 'border-slate-500' },
 ]
 
 const techStack = [
   { label: 'Frontend', value: 'React 19 + Next.js 15 + Vite + Tailwind CSS' },
   { label: 'Backend', value: 'NestJS + FastAPI + Go' },
-  { label: 'AI / Agentes', value: 'LangGraph + 6 agentes, 111+ skills' },
+  { label: 'AI / Agentes', value: 'LangGraph + 6 agentes, 79+ skills' },
   { label: 'Memória', value: '4-layer: Working (Redis), Episodic (PostgreSQL), Semantic (Weaviate), Business (Redis)' },
   { label: 'Dados', value: 'PostgreSQL + Redis + Weaviate + Neo4j' },
   { label: 'Mensageria', value: 'RabbitMQ' },
-  { label: 'Testes', value: '254+ test files, 1661+ unit tests' },
+  { label: 'Testes', value: '254+ test files, 2.210+ unit tests (1.432 Brain + 778 API)' },
   { label: 'Infra', value: 'Turborepo monorepo, Docker, CI/CD' },
   { label: 'Multimodal', value: '16 skills (OCR, áudio, PDF, planilhas, batch)' },
   { label: 'Open Finance', value: 'Pluggy (Phase 1 completo: bank sync; Phase 2: AI categorization; Phase 3: PIX)' },
@@ -25,12 +25,12 @@ const techStack = [
 ]
 
 const agentes = [
-  { name: 'Finance Agent', skills: '33+ skills', desc: 'P&L, CMV, fluxo de caixa, conciliação' },
-  { name: 'Analytics Agent', skills: '16+ skills', desc: 'Benchmarks, insights, relatórios' },
-  { name: 'Operations Agent', skills: '11+ skills', desc: 'Estoque, fornecedores, prep, desperdício' },
+  { name: 'Finance Agent', skills: '30+ skills', desc: 'P&L, CMV, fluxo de caixa, conciliação' },
+  { name: 'Analytics Agent', skills: '14+ skills', desc: 'Benchmarks, insights, relatórios' },
+  { name: 'Operations Agent', skills: '10+ skills', desc: 'Estoque, fornecedores, prep, desperdício' },
   { name: 'Menu Agent', skills: '6+ skills', desc: 'Engenharia de cardápio, precificação' },
-  { name: 'Workflow Agent', skills: '18+ skills', desc: 'Automações, processos, rotinas' },
-  { name: 'General Agent', skills: '3+ skills', desc: 'Orquestração e fallback geral' },
+  { name: 'Workflow Agent', skills: '15+ skills', desc: 'Automações, processos, rotinas' },
+  { name: 'General Agent', skills: '4+ skills', desc: 'Orquestração e fallback geral' },
 ]
 
 const fases = [
@@ -228,6 +228,50 @@ export default function Fundamentos() {
             ))}
           </div>
         </Panel>
+      </div>
+
+      {/* MOAT */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Por que é Difícil de Copiar</h3>
+        <p className="text-gray-500 text-sm mb-4">O moat não é o código — é o que o uso acumulado cria</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            {
+              icon: '📊',
+              title: 'Data Network Effects',
+              desc: '500 restaurantes no Tamy = benchmarks de CMV/margem mais precisos do que qualquer concorrente tem. Mais clientes → benchmarks melhores → mais valor para cada cliente. Flywheel.',
+              color: 'border-purple-500',
+            },
+            {
+              icon: '🔒',
+              title: 'Personalização Profunda',
+              desc: '6 meses de dados do Carlos = Tamy conhece seus fornecedores, dias de pico, padrão sazonal e margem real. Impossible to replicate quickly — esse conhecimento é exclusivo de cada restaurante.',
+              color: 'border-blue-500',
+            },
+            {
+              icon: '💸',
+              title: 'Switching Cost Real',
+              desc: 'P&L histórico, KPIs acumulados, benchmarks personalizados, rotinas criadas. Depois de 6 meses, migrar para outro sistema significa perder toda essa memória operacional.',
+              color: 'border-amber-500',
+            },
+            {
+              icon: '🧠',
+              title: 'Curva de Aprendizado Cumulativa',
+              desc: 'Quanto mais Carlos usa, mais preciso o Tamy fica sobre o negócio dele. O produto melhora passivamente — sem Carlos precisar fazer nada. Incumbentes partem do zero com cada novo cliente.',
+              color: 'border-green-500',
+            },
+          ].map(({ icon, title, desc, color }) => (
+            <div key={title} className={`card border-l-4 ${color} p-4`}>
+              <div className="flex items-start gap-3">
+                <span className="text-2xl shrink-0">{icon}</span>
+                <div>
+                  <h4 className="font-bold text-gray-900 text-sm mb-1">{title}</h4>
+                  <p className="text-xs text-gray-600 leading-relaxed">{desc}</p>
+                </div>
+              </div>
+            </div>
+          ))}
+        </div>
       </div>
 
       {/* 6 Agentes */}

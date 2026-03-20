@@ -106,7 +106,7 @@ const riscos = [
   { level: '🔴 CRÍTICO', title: 'Pre-PMF sem validação real', desc: '254 test files, 111+ skills, mas ZERO feedback de cliente pagante (até agora). O produto pode ser tecnicamente perfeito e comercialmente errado. Mitigação: primeiros 10 clientes em 30 dias — ou pivote.' },
   { level: '🟠 ALTO', title: 'Persona Feminina Subrepresentada', desc: 'ABRASEL 2025: 52,7% mulheres. Se o produto, copy e CS forem "feitos para o Carlos", perdemos metade do mercado. Mitigação: Dona Márcia como persona co-principal em todo material.' },
   { level: '🟠 ALTO', title: 'Churn por Complexidade', desc: 'Dono Alpha (Essencial) pode abandonar se produto exigir mais de 5 min/dia. Qualquer fricção no onboarding = churn no D7. Mitigação: onboarding em 3 mensagens no WhatsApp.' },
-  { level: '🟡 MÉDIO', title: 'Copycat de incumbentes', desc: 'Saipos, Bling ou ERP grande pode lançar "IA no WhatsApp" em 6-12 meses com distribuição existente. Mitigação: velocidade de aprendizado com clientes reais > vantagem técnica.' },
+  { level: '🔴 CRÍTICO', title: 'iFood+Saipos — Distribuição Existente de 300k', desc: 'iFood adquiriu Saipos (Abril 2025). Agora tem acesso a 300k+ restaurantes cadastrados com relacionamento ativo. Se lançarem módulo financeiro via Saipos em 12-24 meses, serão o incumbente com maior distribuição do setor. Mitigação: janela de 12-18 meses para PMF + data moat. 500 clientes ativos com 6 meses de histórico = benchmarks que iFood não replica rapidamente. Velocidade > perfeição.' },
   { level: '🟡 MÉDIO', title: 'Integração iFood (placeholder)', desc: 'A integração com iFood está como placeholder — não há API pública real. Se o ICP depende de delivery, falta feature crítica. Mitigação: priorizar Open Finance + dados manuais primeiro.' },
   { level: '🟢 BAIXO', title: 'Pricing errado', desc: 'R$189,90 pode ser caro para Alpha ou barato para Beta. Teste A/B com inner circle vai revelar WTP real. Risco baixo porque é ajustável sem reescrever produto.' },
 ]
@@ -261,6 +261,66 @@ export default function Estrategia() {
         ))}
       </div>
 
+      {/* OPEN FINANCE IMPACT */}
+      <div className="reveal mb-8">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Open Finance → Impacto Real por Persona</h3>
+        <p className="text-gray-500 text-sm mb-4">O que muda concretamente para Carlos e Márcia quando o banco conecta automaticamente (Pluggy Phase 1)</p>
+
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+          {/* Carlos */}
+          <div className="card-elevated overflow-hidden">
+            <div className="px-4 py-3 border-b border-gray-100" style={{ background: 'linear-gradient(135deg, #1e3a8a, #2563eb)' }}>
+              <h4 className="font-bold text-white text-sm">Seu Carlos + Stone Card conectado</h4>
+              <p className="text-blue-200 text-xs">Antes e depois do Open Finance</p>
+            </div>
+            <div className="p-4 space-y-2.5 text-xs">
+              <div className="flex gap-2 text-gray-600">
+                <span className="text-red-500 shrink-0 font-bold">Antes:</span>
+                <span>45 min/dia conferindo extrato Stone vs. caderno. Erros de lançamento. Transações esquecidas. P&L impreciso.</span>
+              </div>
+              <div className="flex gap-2 text-gray-700">
+                <span className="text-green-600 shrink-0 font-bold">Depois:</span>
+                <span>Transações Stone importadas automaticamente. P&L da manhã inclui tudo. Carlos passa de 45min para 0min por dia nessa tarefa.</span>
+              </div>
+              <div className="bg-green-50 rounded-lg p-2.5 border border-green-100">
+                <p className="font-bold text-green-700 mb-1">Impacto mensurável:</p>
+                <ul className="space-y-1 text-gray-600">
+                  <li>→ 22h/mês recuperadas para operar o bar</li>
+                  <li>→ 100% de completude de dados (vs. ~70% manual)</li>
+                  <li>→ Alerta de taxa real Stone: quanto Carlos paga efetivamente por venda no cartão</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+          {/* Márcia */}
+          <div className="card-elevated overflow-hidden">
+            <div className="px-4 py-3 border-b border-gray-100" style={{ background: 'linear-gradient(135deg, #701a75, #9333ea)' }}>
+              <h4 className="font-bold text-white text-sm">Dona Márcia + iFood reconciliado</h4>
+              <p className="text-purple-200 text-xs">Antes e depois do Open Finance</p>
+            </div>
+            <div className="p-4 space-y-2.5 text-xs">
+              <div className="flex gap-2 text-gray-600">
+                <span className="text-red-500 shrink-0 font-bold">Antes:</span>
+                <span>iFood repassa valores com descontos, taxas e ajustes que Márcia nunca reconcilia. Acredita que recebe X quando recebe X-8%. Sem como provar.</span>
+              </div>
+              <div className="flex gap-2 text-gray-700">
+                <span className="text-green-600 shrink-0 font-bold">Depois:</span>
+                <span>Extrato bancário vs. relatório iFood reconciliados automaticamente. Cada divergência vira alerta: "iFood deveria ter repassado R$340 — você recebeu R$312."</span>
+              </div>
+              <div className="bg-green-50 rounded-lg p-2.5 border border-green-100">
+                <p className="font-bold text-green-700 mb-1">Referência de mercado:</p>
+                <p className="text-gray-600">F360 recuperou <strong>R$92M</strong> para seus clientes reconciliando exatamente isso — iFood vs. conta corrente. Tamy vai contar a mesma história.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div className="mt-4 rounded-xl border border-blue-200 bg-blue-50 p-3 text-xs text-blue-900">
+          <strong>Hipótese a validar:</strong> Bank sync automático (Open Finance Phase 1) reduz o tempo de onboarding de 3 dias para 6 horas — e aumenta a completude de dados de 70% para 95% nos primeiros 30 dias.
+        </div>
+      </div>
+
       {/* PRÉ-MORTEM EXERCISE */}
       <div className="bg-gray-900 text-white rounded-2xl p-5 md:p-6 mb-8 reveal">
         <h3 className="text-lg font-bold mb-3">💀 Exercício de Pré-Mortem (Kahneman)</h3>
@@ -287,6 +347,79 @@ export default function Estrategia() {
         </div>
 
         <p className="text-xs font-bold text-gray-300 mt-4 pt-4 border-t border-gray-700">Saiba qual é o SEU risco principal e invista 80% da energia lá.</p>
+      </div>
+
+      {/* TAMY SCORE */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Tamy Score — O Mecanismo de Retenção</h3>
+        <p className="text-gray-500 text-sm mb-4">O número que o dono acompanha toda semana — como o score do Duolingo, mas financeiro</p>
+
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-4">
+          {[
+            {
+              pts: '40 pts',
+              name: 'Saúde Financeira',
+              desc: 'CMV dentro do benchmark ideal + caixa positivo nos últimos 7 dias + margem líquida ≥ meta declarada',
+              color: 'border-green-500 bg-green-50',
+              textColor: 'text-green-700',
+            },
+            {
+              pts: '30 pts',
+              name: 'Engajamento',
+              desc: 'Streak ativo (dias consecutivos com lançamento) + relatórios semanais abertos + respostas aos alertas',
+              color: 'border-blue-500 bg-blue-50',
+              textColor: 'text-blue-700',
+            },
+            {
+              pts: '20 pts',
+              name: 'Evolução de Metas',
+              desc: '% de progresso em direção ao objetivo declarado no onboarding (ex: "quero CMV < 35%" → hoje em 38% = 50% do caminho)',
+              color: 'border-purple-500 bg-purple-50',
+              textColor: 'text-purple-700',
+            },
+            {
+              pts: '10 pts',
+              name: 'Qualidade dos Dados',
+              desc: '% de dias com lançamento completo no mês. 100% dos dias = 10 pts. Dados incompletos = score trancado.',
+              color: 'border-amber-500 bg-amber-50',
+              textColor: 'text-amber-700',
+            },
+          ].map(({ pts, name, desc, color, textColor }) => (
+            <div key={name} className={`border-l-4 rounded-xl p-3 ${color}`}>
+              <div className="flex items-start justify-between mb-1">
+                <div className={`font-bold text-sm ${textColor}`}>{name}</div>
+                <span className="font-black text-lg text-gray-700">{pts}</span>
+              </div>
+              <p className="text-xs text-gray-600 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+
+        <div className="overflow-x-auto card">
+          <table className="w-full text-xs border-collapse">
+            <thead>
+              <tr className="border-b border-gray-200 bg-gray-50">
+                <th className="text-left p-3 font-bold text-gray-700">Tamy Score</th>
+                <th className="text-left p-3 font-bold text-gray-700">Status</th>
+                <th className="text-left p-3 font-bold text-gray-700">O que a Tamy faz</th>
+              </tr>
+            </thead>
+            <tbody>
+              {[
+                { score: '80–100', status: '🏆 Restaurante Inteligente', action: 'Pede referral, oferece case study, propõe upsell Concierge ou Enterprise' },
+                { score: '50–79', status: '✅ No Caminho Certo', action: 'Mantém engajamento, educa novas features, monitora semana a semana' },
+                { score: '30–49', status: '⚠️ Em Risco', action: 'Push "voltamos para você", email de diagnóstico gratuito, call CS proativo' },
+                { score: '0–29', status: '🚨 Crítico', action: 'Pedro liga pessoalmente (primeiros 100). Diagnóstico gratuito em 48h. Meta: zero sem intervenção.' },
+              ].map(({ score, status, action }, i) => (
+                <tr key={score} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
+                  <td className="p-3 font-bold text-gray-800">{score}</td>
+                  <td className="p-3 font-semibold text-gray-700">{status}</td>
+                  <td className="p-3 text-gray-600 leading-relaxed">{action}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </div>
 
       {/* HEALTH SCORE */}
