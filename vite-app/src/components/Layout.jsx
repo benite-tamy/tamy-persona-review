@@ -52,7 +52,7 @@ export default function Layout() {
             <span className="hidden sm:block text-purple-300 text-xs">Start Growth Academy · Março 2026</span>
           </div>
 
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-2">
+          <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-2 text-white">
             Persona Unificada — Missão 2
           </h1>
           <p className="text-purple-200 text-sm md:text-base font-medium max-w-2xl leading-relaxed">

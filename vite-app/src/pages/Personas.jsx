@@ -75,7 +75,7 @@ export default function Personas() {
                 style={{ background: 'rgba(255,255,255,0.2)' }}>CS</div>
               <div className="text-white">
                 <div className="inline-flex px-2 py-0.5 rounded-full bg-white/20 text-xs font-bold mb-1">ICP Alpha</div>
-                <h3 className="text-lg md:text-xl font-black">Seu Carlos</h3>
+                <h3 className="text-lg md:text-xl font-black text-white">Seu Carlos</h3>
                 <p className="text-blue-200 text-sm">Carlos Eduardo Santos, 41 anos · Curitiba, PR</p>
               </div>
             </div>
