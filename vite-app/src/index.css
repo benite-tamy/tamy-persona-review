@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0; padding: 0;
+    font-family: 'Work Sans', 'Inter', system-ui, sans-serif;
+    background: #f8f7ff;
+    color: #1f2937;
+    -webkit-font-smoothing: antialiased;
+  }
+  h1,h2,h3,h4,h5,h6 {
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 700;
+    line-height: 1.2;
+    color: #111827;
+  }
+  #root { min-height: 100vh; display: flex; flex-direction: column; text-align: left; width: 100%; max-width: 100%; border: none; }
+}
+
+@layer components {
+  .gradient-text {
+    background: linear-gradient(135deg, hsl(255, 95%, 67%), hsl(270, 80%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .card { @apply bg-white rounded-2xl border border-gray-100 shadow-sm; }
+  .card-elevated { @apply bg-white rounded-2xl border border-gray-100 shadow-md; }
+  .badge-pill { @apply inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-semibold; }
+  .section-label { @apply text-xs font-bold uppercase tracking-widest text-purple-600 mb-2 block; }
+  .stat-number { @apply text-3xl md:text-4xl font-black; }
+  .tag-content { @apply badge-pill text-xs; }
+  .dual-panel { @apply grid grid-cols-1 lg:grid-cols-2 gap-4; }
+}
+
+/* Scroll reveal */
+.reveal { opacity: 0; transform: translateY(16px); transition: opacity 0.4s ease, transform 0.4s ease; }
+.reveal.visible { opacity: 1; transform: translateY(0); }
+
+/* Custom scrollbar */
+::-webkit-scrollbar { width: 5px; }
+::-webkit-scrollbar-track { background: #f1f5f9; }
+::-webkit-scrollbar-thumb { background: #c4b5fd; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #8850e2; }
+
+/* Hide mobile nav scrollbar */
+.nav-scroll::-webkit-scrollbar { display: none; }
+.nav-scroll { -ms-overflow-style: none; scrollbar-width: none; }
