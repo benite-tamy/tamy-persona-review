@@ -104,7 +104,7 @@ const playbook = [
 const riscos = [
   { level: '🔴 CRÍTICO', title: 'Dependência do WhatsApp Business API', desc: 'Meta pode bloquear/mudar regras overnight. Aconteceu com 0800 (descontinuado), pode acontecer com WhatsApp API. Mitigação: manter canal email como backup, desenvolver mini-app PWA paralelo. Diversificação de canal é roadmap item 1.' },
   { level: '🔴 CRÍTICO', title: 'Pre-PMF sem validação real', desc: '254 test files, 111+ skills, mas ZERO feedback de cliente pagante (até agora). O produto pode ser tecnicamente perfeito e comercialmente errado. Mitigação: primeiros 10 clientes em 30 dias — ou pivote.' },
-  { level: '🟠 ALTO', title: 'Persona Feminina Subrepresentada', desc: 'ABRASEL 2025: 52,7% mulheres. Se o produto, copy e CS forem "feitos para o Carlos", perdemos metade do mercado. Mitigação: Dona Márcia como persona co-principal em todo material.' },
+  { level: '🟠 ALTO', title: 'Persona Feminina Subrepresentada', desc: 'ABRASEL 2025: 52,7% mulheres. Se o produto, copy e CS forem "feitos para o Carlos", perdemos metade do mercado. Mitigação: Dona Márcia como PERSONA PRINCIPAL em todo material — ela é 52,7% do mercado, não nicho.' },
   { level: '🟠 ALTO', title: 'Churn por Complexidade', desc: 'Dono Alpha (Essencial) pode abandonar se produto exigir mais de 5 min/dia. Qualquer fricção no onboarding = churn no D7. Mitigação: onboarding em 3 mensagens no WhatsApp.' },
   { level: '🔴 CRÍTICO', title: 'iFood+Saipos — Distribuição Existente de 300k', desc: 'iFood adquiriu Saipos (Abril 2025). Agora tem acesso a 300k+ restaurantes cadastrados com relacionamento ativo. Se lançarem módulo financeiro via Saipos em 12-24 meses, serão o incumbente com maior distribuição do setor. Mitigação: janela de 12-18 meses para PMF + data moat. 500 clientes ativos com 6 meses de histórico = benchmarks que iFood não replica rapidamente. Velocidade > perfeição.' },
   { level: '🟡 MÉDIO', title: 'Integração iFood (placeholder)', desc: 'A integração com iFood está como placeholder — não há API pública real. Se o ICP depende de delivery, falta feature crítica. Mitigação: priorizar Open Finance + dados manuais primeiro.' },
@@ -323,8 +323,8 @@ export default function Estrategia() {
 
       {/* PRÉ-MORTEM EXERCISE */}
       <div className="bg-gray-900 text-white rounded-2xl p-5 md:p-6 mb-8 reveal">
-        <h3 className="text-lg font-bold mb-3">💀 Exercício de Pré-Mortem (Kahneman)</h3>
-        <p className="text-sm text-gray-300 mb-4">Imagine que é março de 2027 e a Tamy falhou. Qual foi a causa mais provável?</p>
+        <h3 className="text-lg font-bold mb-3 text-white">💀 Exercício de Pré-Mortem (Kahneman)</h3>
+        <p className="text-sm text-gray-100 mb-4">Imagine que é março de 2027 e a Tamy falhou. Qual foi a causa mais provável?</p>
 
         <div className="space-y-3">
           <div className="bg-gray-800 p-3 rounded-lg border-l-4 border-red-500">

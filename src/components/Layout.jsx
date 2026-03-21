@@ -5,6 +5,7 @@ const navItems = [
   { to: '/', label: '🏠 Hub', end: true },
   { to: '/fundamentos', label: 'Fundamentos' },
   { to: '/personas', label: 'Personas' },
+  { to: '/job-description', label: '📋 Job Description', accent: 'pink' },
   { to: '/perguntas', label: '12 Perguntas' },
   { to: '/mercado', label: 'Mercado & Planos' },
   { to: '/sexy-canvas', label: '🔥 Sexy Canvas', accent: 'red' },
@@ -88,10 +89,12 @@ export default function Layout() {
                   if (isActive) {
                     if (accent === 'red') return `${base} bg-red-100 text-red-700 border border-red-200`
                     if (accent === 'green') return `${base} bg-green-100 text-green-700 border border-green-200`
+                    if (accent === 'pink') return `${base} bg-pink-100 text-pink-700 border border-pink-200`
                     return `${base} text-white border border-purple-600`
                   }
                   if (accent === 'red') return `${base} bg-red-50 text-red-600 border border-red-100 hover:bg-red-100`
                   if (accent === 'green') return `${base} bg-green-50 text-green-600 border border-green-100 hover:bg-green-100`
+                  if (accent === 'pink') return `${base} bg-pink-50 text-pink-600 border border-pink-100 hover:bg-pink-100`
                   return `${base} text-gray-600 border border-gray-200 hover:bg-gray-50 hover:text-gray-800`
                 }}
                 style={({ isActive }) =>

@@ -15,10 +15,19 @@ const cards = [
     to: '/personas',
     emoji: '👥',
     title: 'Personas & ICPs',
-    desc: 'Seu Carlos (Alpha) e Dona Márcia (Beta). Anti-personas. ICP completo.',
+    desc: 'Dona Márcia (Beta) e Seu Carlos (Alpha). Anti-personas. ICP completo.',
     color: 'border-blue-500',
     textColor: 'text-blue-600',
     bg: 'hover:bg-blue-50',
+  },
+  {
+    to: '/job-description',
+    emoji: '📋',
+    title: 'Job Description',
+    desc: 'Personas como se fossemos contratar. Cargo, responsabilidades, ROI, objecoes e sales toolkit.',
+    color: 'border-pink-500',
+    textColor: 'text-pink-600',
+    bg: 'hover:bg-pink-50',
   },
   {
     to: '/perguntas',
@@ -87,7 +96,7 @@ export default function Hub() {
             <p className="font-bold text-purple-900 text-sm md:text-base">Este é o North Star da Tamy Food</p>
             <p className="text-purple-700 text-xs md:text-sm mt-1 leading-relaxed">
               Toda decisão de produto, GTM, CS e pricing deve ser tomada com base nas personas, dados e hipóteses documentadas aqui.
-              Antes de qualquer feature ou campanha, pergunte: <strong>"Isso resolve a dor do Carlos ou da Márcia?"</strong>
+              Antes de qualquer feature ou campanha, pergunte: <strong>"Isso resolve a dor da Márcia ou do Carlos?"</strong>
             </p>
           </div>
         </div>
@@ -133,7 +142,7 @@ export default function Hub() {
         <span className="text-xl shrink-0">👩‍🍳</span>
         <p className="text-pink-800 text-xs md:text-sm leading-relaxed">
           <strong>Dado crítico ABRASEL 2025:</strong> Mulheres lideram 52,7% das empresas de alimentação fora do lar no Brasil — e 67,34% de delivery/marmitarias.
-          A Tamy precisa falar com ELE e com ELA desde o Dia 1. Por isso temos dois ICPs principais: <strong>Seu Carlos</strong> e <strong>Dona Márcia</strong>.
+          A Tamy precisa falar com ELE e com ELA desde o Dia 1. Por isso temos dois ICPs principais: <strong>Dona Márcia</strong> e <strong>Seu Carlos</strong>.
         </p>
       </div>
     </div>
