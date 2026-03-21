@@ -67,6 +67,169 @@ export default function Personas() {
         </p>
       </div>
 
+      {/* POR QUE MÁRCIA PRIMEIRO */}
+      <div className="reveal rounded-2xl border-2 border-pink-300 p-4 md:p-5 mb-6"
+        style={{ background: 'linear-gradient(135deg, #fdf2f8, #fce7f3)' }}>
+        <h3 className="font-bold text-pink-900 text-sm md:text-base mb-2 flex items-center gap-2">
+          <span>👩‍🍳</span> Por que Márcia Primeiro?
+        </h3>
+        <p className="text-pink-800 text-xs md:text-sm leading-relaxed mb-2">
+          <strong>Márcia não é nicho — Márcia é a MAIORIA do mercado.</strong> Mulheres lideram 52,7% das empresas de alimentação e 67,34% de delivery/marmitarias (ABRASEL 2025).
+        </p>
+        <p className="text-pink-800 text-xs md:text-sm leading-relaxed">
+          Nenhum competidor fala com ela: Saipos tem UX masculina, Simpliza não tem suporte real, Sischef é ERP genérico.
+          <strong> Essa é a brecha competitiva da Tamy.</strong> Toda decisão de produto, copy e GTM parte da Márcia.
+        </p>
+      </div>
+
+      {/* DONA MÁRCIA */}
+      <div className="reveal mb-6">
+        <div className="card-elevated overflow-hidden">
+          <div className="p-4 md:p-5" style={{ background: 'linear-gradient(135deg, #701a75, #9333ea)' }}>
+            <div className="flex gap-3 items-center">
+              <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-xl font-black text-white shrink-0"
+                style={{ background: 'rgba(255,255,255,0.2)' }}>DM</div>
+              <div className="text-white">
+                <div className="inline-flex px-2 py-0.5 rounded-full bg-white/20 text-xs font-bold mb-1">ICP Beta</div>
+                <h3 className="text-lg md:text-xl font-black text-white">Dona Márcia</h3>
+                <p className="text-purple-200 text-sm">Márcia de Oliveira Santos, 36 anos · São Paulo, SP</p>
+              </div>
+            </div>
+          </div>
+
+          <div className="p-4 md:p-5">
+            <p className="text-sm font-bold text-gray-800 mb-3">Sabor da Márcia — Marmitaria + delivery premium</p>
+
+            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
+              {[
+                { label: 'Faturamento', value: 'R$120k/mês' },
+                { label: 'Unidades', value: '1 + dark kitchen' },
+                { label: 'Equipe', value: '12 pessoas' },
+                { label: 'Plano', value: 'Concierge' },
+              ].map(({ label, value }) => (
+                <div key={label} className="bg-purple-50 rounded-xl p-2.5 text-center">
+                  <div className="text-xs text-gray-500 mb-0.5">{label}</div>
+                  <div className="text-sm font-bold text-purple-700">{value}</div>
+                </div>
+              ))}
+            </div>
+
+            <div className="bg-gray-50 rounded-xl p-3 mb-4 border-l-4 border-purple-400">
+              <p className="text-xs text-gray-700 leading-relaxed italic">
+                Mãe solo de dois filhos (8 e 11 anos). Ex-técnica de enfermagem que abriu a marmitaria durante a pandemia porque precisava de renda enquanto os hospitais demitiam. O que começou com 15 marmitas/dia virou 320 unidades/dia + dark kitchen em 3 anos. É organizada, metódica, mas está no limite — ela é a operação e a gestão. Se ela parar, tudo para.
+              </p>
+            </div>
+
+            <div className="mb-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Rotina Típica</h4>
+              <div className="space-y-1.5 text-xs text-gray-600">
+                {[
+                  ['4h45', 'Acorda, prepara os filhos (deixa marmita pra eles)'],
+                  ['5h30', 'Chega na cozinha, supervisiona mise en place'],
+                  ['8h', 'Recebe fornecedor, fecha pedidos WhatsApp'],
+                  ['11h–14h', 'Pico de produção + delivery (120+ marmitas)'],
+                  ['14h30', 'Busca filhos na escola, faz dever junto'],
+                  ['19h', 'Fecha caixa, responde clientes, posta em grupos de marmita'],
+                  ['22h', 'Planeja cardápio da semana, fecha às 23h30'],
+                ].map(([time, desc]) => (
+                  <div key={time} className="flex gap-2">
+                    <span className="font-bold text-purple-600 w-16 shrink-0">{time}</span>
+                    <span>{desc}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
+              <div className="bg-red-50 rounded-xl p-2.5 border border-red-100">
+                <div className="font-bold text-red-700 mb-1">😰 Maior Medo</div>
+                <p className="text-gray-600">Não saber o lucro real por prato — e descobrir que o mais pedido dá prejuízo. "Vendo muito mas fico no zero."</p>
+              </div>
+              <div className="bg-amber-50 rounded-xl p-2.5 border border-amber-100">
+                <div className="font-bold text-amber-700 mb-1">🏆 Sonho</div>
+                <p className="text-gray-600">Contratar um gerente e tirar 3 semanas de férias sem o negócio afundar. Primeiro apartamento próprio.</p>
+              </div>
+              <div className="bg-purple-50 rounded-xl p-2.5 border border-purple-100">
+                <div className="font-bold text-purple-700 mb-1">🔑 Gatilho de Compra</div>
+                <p className="text-gray-600">Ver relatório por prato e descobrir que marmita fitness tem margem 8% menor que a tradicional.</p>
+              </div>
+            </div>
+
+            <div className="mt-3 flex flex-wrap gap-1.5">
+              {['iFood (maior volume)', 'Grupos WhatsApp', 'Rappi', 'MEI (limite beirando)', 'Planilha básica'].map(t => (
+                <span key={t} className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs">{t}</span>
+              ))}
+            </div>
+
+            {/* Frase que Define */}
+            <div className="mt-4 p-3 rounded-xl border-l-4 border-purple-500 bg-purple-50">
+              <p className="text-xs text-gray-700 italic font-semibold">
+                "Eu trabalho mais que qualquer um, mas no fim do mês não sei se sobrou alguma coisa pra mim."
+              </p>
+            </div>
+
+            {/* Medos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">😰 Medos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Não conseguir pagar as meninas</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Filhos perceberem o estresse</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Crescer e perder controle total</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>iFood aumentar comissão pra 30%+</span></li>
+                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Ser "só a mulher da marmita"</span></li>
+              </ul>
+            </div>
+
+            {/* Sonhos — Full List */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🏆 Sonhos (5)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Ter espaço próprio (sair da garagem)</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Contratar gerente e sair às 15h</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Criar linha de marmitas fit</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Férias (3 dias na praia seria luxo)</span></li>
+                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Provar que dá conta</span></li>
+              </ul>
+            </div>
+
+            {/* O que a Converte */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🔑 O que a Converte (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Outra dona mostrando que funciona</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>"Zero esforço" (não tem 1 minuto sobrando)</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Segurança: dados seguros, LGPD</span></li>
+                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Pedro contando história da Martita</span></li>
+              </ul>
+            </div>
+
+            {/* Anti-triggers */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">⛔ Anti-triggers (4)</h4>
+              <ul className="space-y-1.5 text-xs text-gray-600">
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Linguagem condescendente</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>App novo pra instalar</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Dashboard tipo planilha de contador</span></li>
+                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Vendedor homem explicando finanças</span></li>
+              </ul>
+            </div>
+
+            {/* Tech Trauma */}
+            <div className="mt-4">
+              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🖥️ Trauma com Tecnologia</h4>
+              <div className="bg-amber-50 rounded-xl p-3 border border-amber-200">
+                <p className="text-xs text-gray-700 leading-relaxed mb-2">
+                  <strong>Tentou 2 apps antes.</strong> Um app de marmitaria e o Trello para organizar produção. Ambos morreram em semanas — sem tempo para configurar, sem suporte, sem resultado visível.
+                </p>
+                <p className="text-xs text-gray-700 leading-relaxed">
+                  <strong>Por que Tamy é diferente:</strong> no Concierge, a <em>equipe</em> faz o setup. Márcia não precisa aprender nada. No D2 já tem o P&L pronto — ela nunca precisou digitar um dado.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       {/* SEU CARLOS */}
       <div className="reveal mb-6">
         <div className="card-elevated overflow-hidden">
@@ -214,154 +377,6 @@ export default function Personas() {
         </div>
       </div>
 
-      {/* DONA MÁRCIA */}
-      <div className="reveal mb-6">
-        <div className="card-elevated overflow-hidden">
-          <div className="p-4 md:p-5" style={{ background: 'linear-gradient(135deg, #701a75, #9333ea)' }}>
-            <div className="flex gap-3 items-center">
-              <div className="w-14 h-14 md:w-16 md:h-16 rounded-2xl flex items-center justify-center text-xl font-black text-white shrink-0"
-                style={{ background: 'rgba(255,255,255,0.2)' }}>DM</div>
-              <div className="text-white">
-                <div className="inline-flex px-2 py-0.5 rounded-full bg-white/20 text-xs font-bold mb-1">ICP Beta</div>
-                <h3 className="text-lg md:text-xl font-black">Dona Márcia</h3>
-                <p className="text-purple-200 text-sm">Márcia de Oliveira Santos, 36 anos · São Paulo, SP</p>
-              </div>
-            </div>
-          </div>
-
-          <div className="p-4 md:p-5">
-            <p className="text-sm font-bold text-gray-800 mb-3">Sabor da Márcia — Marmitaria + delivery premium</p>
-
-            <div className="grid grid-cols-2 sm:grid-cols-4 gap-2 mb-4">
-              {[
-                { label: 'Faturamento', value: 'R$120k/mês' },
-                { label: 'Unidades', value: '1 + dark kitchen' },
-                { label: 'Equipe', value: '12 pessoas' },
-                { label: 'Plano', value: 'Concierge' },
-              ].map(({ label, value }) => (
-                <div key={label} className="bg-purple-50 rounded-xl p-2.5 text-center">
-                  <div className="text-xs text-gray-500 mb-0.5">{label}</div>
-                  <div className="text-sm font-bold text-purple-700">{value}</div>
-                </div>
-              ))}
-            </div>
-
-            <div className="bg-gray-50 rounded-xl p-3 mb-4 border-l-4 border-purple-400">
-              <p className="text-xs text-gray-700 leading-relaxed italic">
-                Mãe solo de dois filhos (8 e 11 anos). Ex-técnica de enfermagem que abriu a marmitaria durante a pandemia porque precisava de renda enquanto os hospitais demitiam. O que começou com 15 marmitas/dia virou 320 unidades/dia + dark kitchen em 3 anos. É organizada, metódica, mas está no limite — ela é a operação e a gestão. Se ela parar, tudo para.
-              </p>
-            </div>
-
-            <div className="mb-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">Rotina Típica</h4>
-              <div className="space-y-1.5 text-xs text-gray-600">
-                {[
-                  ['4h45', 'Acorda, prepara os filhos (deixa marmita pra eles)'],
-                  ['5h30', 'Chega na cozinha, supervisiona mise en place'],
-                  ['8h', 'Recebe fornecedor, fecha pedidos WhatsApp'],
-                  ['11h–14h', 'Pico de produção + delivery (120+ marmitas)'],
-                  ['14h30', 'Busca filhos na escola, faz dever junto'],
-                  ['19h', 'Fecha caixa, responde clientes, posta em grupos de marmita'],
-                  ['22h', 'Planeja cardápio da semana, fecha às 23h30'],
-                ].map(([time, desc]) => (
-                  <div key={time} className="flex gap-2">
-                    <span className="font-bold text-purple-600 w-16 shrink-0">{time}</span>
-                    <span>{desc}</span>
-                  </div>
-                ))}
-              </div>
-            </div>
-
-            <div className="grid grid-cols-1 sm:grid-cols-3 gap-2 text-xs">
-              <div className="bg-red-50 rounded-xl p-2.5 border border-red-100">
-                <div className="font-bold text-red-700 mb-1">😰 Maior Medo</div>
-                <p className="text-gray-600">Não saber o lucro real por prato — e descobrir que o mais pedido dá prejuízo. "Vendo muito mas fico no zero."</p>
-              </div>
-              <div className="bg-amber-50 rounded-xl p-2.5 border border-amber-100">
-                <div className="font-bold text-amber-700 mb-1">🏆 Sonho</div>
-                <p className="text-gray-600">Contratar um gerente e tirar 3 semanas de férias sem o negócio afundar. Primeiro apartamento próprio.</p>
-              </div>
-              <div className="bg-purple-50 rounded-xl p-2.5 border border-purple-100">
-                <div className="font-bold text-purple-700 mb-1">🔑 Gatilho de Compra</div>
-                <p className="text-gray-600">Ver relatório por prato e descobrir que marmita fitness tem margem 8% menor que a tradicional.</p>
-              </div>
-            </div>
-
-            <div className="mt-3 flex flex-wrap gap-1.5">
-              {['iFood (maior volume)', 'Grupos WhatsApp', 'Rappi', 'MEI (limite beirando)', 'Planilha básica'].map(t => (
-                <span key={t} className="px-2 py-0.5 bg-gray-100 text-gray-600 rounded-full text-xs">{t}</span>
-              ))}
-            </div>
-
-            {/* Frase que Define */}
-            <div className="mt-4 p-3 rounded-xl border-l-4 border-purple-500 bg-purple-50">
-              <p className="text-xs text-gray-700 italic font-semibold">
-                "Eu trabalho mais que qualquer um, mas no fim do mês não sei se sobrou alguma coisa pra mim."
-              </p>
-            </div>
-
-            {/* Medos — Full List */}
-            <div className="mt-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">😰 Medos (5)</h4>
-              <ul className="space-y-1.5 text-xs text-gray-600">
-                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Não conseguir pagar as meninas</span></li>
-                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Filhos perceberem o estresse</span></li>
-                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Crescer e perder controle total</span></li>
-                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>iFood aumentar comissão pra 30%+</span></li>
-                <li className="flex gap-2"><span className="text-red-500 font-bold">•</span> <span>Ser "só a mulher da marmita"</span></li>
-              </ul>
-            </div>
-
-            {/* Sonhos — Full List */}
-            <div className="mt-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🏆 Sonhos (5)</h4>
-              <ul className="space-y-1.5 text-xs text-gray-600">
-                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Ter espaço próprio (sair da garagem)</span></li>
-                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Contratar gerente e sair às 15h</span></li>
-                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Criar linha de marmitas fit</span></li>
-                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Férias (3 dias na praia seria luxo)</span></li>
-                <li className="flex gap-2"><span className="text-amber-500 font-bold">•</span> <span>Provar que dá conta</span></li>
-              </ul>
-            </div>
-
-            {/* O que a Converte */}
-            <div className="mt-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🔑 O que a Converte (4)</h4>
-              <ul className="space-y-1.5 text-xs text-gray-600">
-                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Outra dona mostrando que funciona</span></li>
-                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>"Zero esforço" (não tem 1 minuto sobrando)</span></li>
-                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Segurança: dados seguros, LGPD</span></li>
-                <li className="flex gap-2"><span className="text-purple-500 font-bold">✓</span> <span>Pedro contando história da Martita</span></li>
-              </ul>
-            </div>
-
-            {/* Anti-triggers */}
-            <div className="mt-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">⛔ Anti-triggers (4)</h4>
-              <ul className="space-y-1.5 text-xs text-gray-600">
-                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Linguagem condescendente</span></li>
-                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>App novo pra instalar</span></li>
-                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Dashboard tipo planilha de contador</span></li>
-                <li className="flex gap-2"><span className="text-red-400 font-bold">✕</span> <span>Vendedor homem explicando finanças</span></li>
-              </ul>
-            </div>
-
-            {/* Tech Trauma */}
-            <div className="mt-4">
-              <h4 className="text-xs font-bold text-gray-700 uppercase tracking-wider mb-2">🖥️ Trauma com Tecnologia</h4>
-              <div className="bg-amber-50 rounded-xl p-3 border border-amber-200">
-                <p className="text-xs text-gray-700 leading-relaxed mb-2">
-                  <strong>Tentou 2 apps antes.</strong> Um app de marmitaria e o Trello para organizar produção. Ambos morreram em semanas — sem tempo para configurar, sem suporte, sem resultado visível.
-                </p>
-                <p className="text-xs text-gray-700 leading-relaxed">
-                  <strong>Por que Tamy é diferente:</strong> no Concierge, a <em>equipe</em> faz o setup. Márcia não precisa aprender nada. No D2 já tem o P&L pronto — ela nunca precisou digitar um dado.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
       {/* CONTADOR-PARCEIRO */}
       <div className="reveal mb-6">
         <div className="card-elevated overflow-hidden">
@@ -436,71 +451,71 @@ export default function Personas() {
 
       {/* COMPARISON TABLE */}
       <div className="reveal mb-6">
-        <h3 className="text-lg font-bold text-gray-900 mb-4">Comparação: Seu Carlos vs. Dona Márcia</h3>
+        <h3 className="text-lg font-bold text-gray-900 mb-4">Comparação: Dona Márcia vs. Seu Carlos</h3>
         <Panel className="overflow-x-auto">
           <table className="w-full text-xs border-collapse">
             <thead>
               <tr className="border-b border-gray-200">
                 <th className="text-left p-2.5 font-bold text-gray-700 bg-gray-50">Dimensão</th>
-                <th className="text-left p-2.5 font-bold text-blue-700 bg-blue-50">Seu Carlos</th>
                 <th className="text-left p-2.5 font-bold text-purple-700 bg-purple-50">Dona Márcia</th>
+                <th className="text-left p-2.5 font-bold text-blue-700 bg-blue-50">Seu Carlos</th>
               </tr>
             </thead>
             <tbody>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Idade/Contexto</td>
-                <td className="p-2.5 text-gray-600">41 anos, casado, 1 filho</td>
                 <td className="p-2.5 text-gray-600">36 anos, separada, 2 filhos (mãe solo)</td>
+                <td className="p-2.5 text-gray-600">41 anos, casado, 1 filho</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Negócio</td>
-                <td className="p-2.5 text-gray-600">Bar + petiscos</td>
                 <td className="p-2.5 text-gray-600">Marmitaria + delivery</td>
+                <td className="p-2.5 text-gray-600">Bar + petiscos</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Faturamento</td>
-                <td className="p-2.5 text-gray-600">R$ 85k/mês</td>
                 <td className="p-2.5 text-gray-600">R$ 120k/mês</td>
+                <td className="p-2.5 text-gray-600">R$ 85k/mês</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Canal Principal</td>
-                <td className="p-2.5 text-gray-600">Balcão (75%) + iFood (25%)</td>
                 <td className="p-2.5 text-gray-600">iFood (40%) + WhatsApp direto (35%) + Presencial (25%)</td>
+                <td className="p-2.5 text-gray-600">Balcão (75%) + iFood (25%)</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Maturidade Digital</td>
-                <td className="p-2.5 text-gray-600">Baixa (Android antigo, sem PDV)</td>
                 <td className="p-2.5 text-gray-600">Média (iPhone, Instagram ativo, Canva)</td>
+                <td className="p-2.5 text-gray-600">Baixa (Android antigo, sem PDV)</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Relação com Dinheiro</td>
-                <td className="p-2.5 text-gray-600">Mistura PF/PJ, "tiro o que preciso"</td>
                 <td className="p-2.5 text-gray-600">Trauma de dívida, paga tudo em dia mas sem reserva</td>
+                <td className="p-2.5 text-gray-600">Mistura PF/PJ, "tiro o que preciso"</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Motivação Principal</td>
-                <td className="p-2.5 text-gray-600">Autonomia + orgulho (ser dono)</td>
                 <td className="p-2.5 text-gray-600">Segurança dos filhos + provar que dá conta</td>
+                <td className="p-2.5 text-gray-600">Autonomia + orgulho (ser dono)</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Plano Natural</td>
-                <td className="p-2.5 text-gray-600">Essencial (faz ele mesmo)</td>
                 <td className="p-2.5 text-gray-600">Concierge (zero tempo sobrando)</td>
+                <td className="p-2.5 text-gray-600">Essencial (faz ele mesmo)</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Aha Moment Provável</td>
-                <td className="p-2.5 text-gray-600">CMV real vs. benchmark ("43%?!")</td>
                 <td className="p-2.5 text-gray-600">Margem iFood vs. salão ("3% vs. 22%?!")</td>
+                <td className="p-2.5 text-gray-600">CMV real vs. benchmark ("43%?!")</td>
               </tr>
               <tr className="border-b border-gray-200 hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Medo #1</td>
-                <td className="p-2.5 text-gray-600">Ter que fechar e voltar a ser empregado</td>
                 <td className="p-2.5 text-gray-600">Não dar segurança pros filhos</td>
+                <td className="p-2.5 text-gray-600">Ter que fechar e voltar a ser empregado</td>
               </tr>
               <tr className="hover:bg-gray-50">
                 <td className="p-2.5 font-bold text-gray-700">Sonho #1</td>
-                <td className="p-2.5 text-gray-600">Abrir segunda unidade</td>
                 <td className="p-2.5 text-gray-600">Ter espaço próprio (sair da garagem)</td>
+                <td className="p-2.5 text-gray-600">Abrir segunda unidade</td>
               </tr>
             </tbody>
           </table>
