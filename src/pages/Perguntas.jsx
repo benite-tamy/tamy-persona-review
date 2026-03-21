@@ -221,12 +221,12 @@ const perguntas = [
         ],
       },
       {
-        label: 'D90+ — Lock-in, Advocacia e Expansão',
+        label: 'D90+ — Desafios de Retenção e Saída',
         items: [
-          ['Streaks + Tamy Score = dono com streak de 30d NÃO cancela — gamificação como retenção orgânica', 'demo', 'Gamificação'],
-          ['Grupo "Donos Inteligentes" cria custo social de sair — peer pressure positivo como lock-in', 'demo', 'Comunidade'],
-          ['Economizou R$500+ no primeiro mês → indica naturalmente — referral automático ativado após 30 dias', 'post', 'Post'],
-          ['Data moat: após 12 meses, histórico da Tamy é insuperável — nenhum concorrente tem esses dados', 'artigo', 'Artigo'],
+          ['Perde a urgência quando a situação melhora — "já sei meus números, pra que continuar pagando?" — sem streak visível, cancela', 'post', 'Post'],
+          ['Custo de saída percebido como baixo — "planilha serviria" — sem comunidade e benchmark comparativo, churn é fácil', 'post', 'Post'],
+          ['Motivação cai quando números melhoram — sem novos objetivos (segunda unidade, crédito, franquia), o produto perde propósito', 'artigo', 'Artigo'],
+          ['12 meses de histórico financeiro organizados são difíceis de recriar — mas a persona não percebe esse valor até precisar de crédito', 'artigo', 'Artigo'],
         ],
       },
     ],
@@ -318,8 +318,8 @@ const perguntas = [
       ['Converte quando: mês ruim sem entender por quê, expansão sem dados, IR assustou, briga com sócio', 'post', 'Post'],
       ['Psicográfico: pragmático (quer número, não gráfico bonito), orgulhoso da comida, inseguro com gestão', 'post', 'Post'],
       ['Ciclo de atenção: 15-30 segundos. Abandona ferramenta em <72h sem valor percebido', 'post', 'Post'],
-      ['D7 activation = 82% acurácia de retenção D90 — janela crítica de ativação', 'post', 'Pitch'],
-      ['Economizou R$500+ no primeiro mês → indica naturalmente. Influenciado por pares > ads', 'post', 'Post'],
+      ['Tolerância zero para fricção — abandona qualquer ferramenta em <72h sem valor percebido concreto', 'post', 'Post'],
+      ['Influenciado por pares acima de qualquer anúncio — referral de um colega do setor vale mais que 10 ads', 'post', 'Post'],
       ['Anti-personas: redes 50+ unidades, MEI <R$15k/mês, franqueados de grandes redes, "só emitir NF"', 'post', 'Post'],
     ],
     jornada: [
