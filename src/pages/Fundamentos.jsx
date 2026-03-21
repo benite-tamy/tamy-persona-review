@@ -151,7 +151,7 @@ export default function Fundamentos() {
           </div>
           <div className="space-y-2 text-xs text-gray-600">
             <div className="bg-green-50 rounded-lg p-2 border-l-2 border-green-400">
-              <strong className="text-green-700">O que já temos:</strong> Produto técnico robusto (111+ skills, 6 agentes, 254+ test files). Motor de Ferrari na garagem.
+              <strong className="text-green-700">O que já temos:</strong> Produto técnico robusto (79+ skills, 6 agentes, 254+ test files). Motor de Ferrari na garagem.
             </div>
             <div className="bg-amber-50 rounded-lg p-2 border-l-2 border-amber-400">
               <strong className="text-amber-700">O que falta:</strong> GTM execution — ir ao mercado, validar PMF, construir máquina de aquisição.
@@ -274,10 +274,54 @@ export default function Fundamentos() {
         </div>
       </div>
 
+      {/* Profundidade Técnica Real */}
+      <div className="reveal mb-6">
+        <h3 className="text-lg font-bold text-gray-900 mb-1">Profundidade Técnica Real</h3>
+        <p className="text-gray-500 text-sm mb-4">O que realmente existe no código — não é projeção, é construído</p>
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
+          {[
+            {
+              id: 'A',
+              title: '🧠 Multi-Agent System (LangGraph)',
+              desc: '6 agentes especializados com 79+ skills em produção. Pipeline: Intent Router (L0-L4) → Plan Executor → Action Gate (HITL) → Summarizer. Respostas simples em <200ms. Ações financeiras com confirmação humana.',
+              color: 'border-purple-500',
+            },
+            {
+              id: 'B',
+              title: '💾 4-Layer Memory (diferenciador)',
+              desc: 'Working Memory (Redis, per-conversation) → Episodic Memory (PostgreSQL, cross-conversation, 30d TTL) → Semantic Memory (Weaviate vectors, per-tenant). Quanto mais o(a) dono(a) usa, mais a Tamy entende o negócio. Inclui Reflection System — IA auto-melhora com quality gate (score ≥ 4.0).',
+              color: 'border-blue-500',
+            },
+            {
+              id: 'C',
+              title: '📄 Multimodal Pipeline',
+              desc: 'OCR + entity extraction via Claude Vision. 16 skills multimodais: OCR, áudio, PDF, planilhas, batch. Foto de nota → despesa categorizada em 30s. Batch processing para múltiplos documentos simultaneamente.',
+              color: 'border-amber-500',
+            },
+            {
+              id: 'D',
+              title: '🏗️ Infra Production-Ready',
+              desc: 'Monorepo Turborepo com 10 apps. NestJS (API) + FastAPI (Brain) + Go (ETL/Indexação). PostgreSQL + Redis + Weaviate + Neo4j + RabbitMQ. Docker, CI/CD, Sentry + Langfuse + Grafana. 2.210+ testes automatizados.',
+              color: 'border-green-500',
+            },
+          ].map(({ id, title, desc, color }) => (
+            <div key={id} className={`card border-l-4 ${color} p-4`}>
+              <h4 className="font-bold text-gray-900 text-sm mb-2">{title}</h4>
+              <p className="text-xs text-gray-600 leading-relaxed">{desc}</p>
+            </div>
+          ))}
+        </div>
+        <div className="mt-3 rounded-xl border border-purple-200 bg-purple-50 p-3">
+          <p className="text-xs text-purple-900 leading-relaxed">
+            <strong>Insight Sexy Canvas:</strong> Essa profundidade técnica é invisível pro(a) dono(a) — e DEVE ser. Ele/ela vê "foto no WhatsApp = despesa em 30 segundos". Por trás tem Claude Vision + entity extraction + HITL confirmation. A complexidade interna é o moat. A simplicidade externa é a venda. <strong>Preguiça (5/5) na UX, Engenharia (5/5) no backend.</strong>
+          </p>
+        </div>
+      </div>
+
       {/* 6 Agentes */}
       <div className="reveal">
         <h3 className="text-lg font-bold text-gray-900 mb-1">6 Agentes Especializados</h3>
-        <p className="text-gray-500 text-sm mb-4">111+ skills total distribuídas em 6 agentes LangGraph</p>
+        <p className="text-gray-500 text-sm mb-4">79+ skills total distribuídas em 6 agentes LangGraph</p>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-3">
           {agentes.map(({ name, skills, desc }) => (
             <div key={name} className="bg-white rounded-2xl border border-gray-100 shadow-sm p-4 flex gap-3">
