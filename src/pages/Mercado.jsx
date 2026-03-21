@@ -449,6 +449,15 @@ export default function Mercado() {
           </div>
         </div>
 
+        {/* Visão de Futuro */}
+        <div className="mt-6 reveal rounded-2xl border border-teal-200 p-4"
+          style={{ background: 'linear-gradient(135deg, #f0fdfa, #ccfbf1)' }}>
+          <p className="font-bold text-teal-900 text-sm mb-2">🚀 Visão de Futuro</p>
+          <p className="text-teal-800 text-xs leading-relaxed">
+            Tiramos as pessoas e deixamos 100% IA recebendo, preenchendo, automatizando e gerenciando tudo. Gerentes de conta viram suporte/CS. Modelo Toast+Ramp+Restoke+Duolingo: <strong>SaaS inteligente</strong> (Ramp spending intelligence + Restoke ops) → <strong>Plataforma gamificada</strong> (Duolingo engagement) → <strong>Fintech completa</strong> (Toast endgame) → <strong>PDV integrado</strong> (futuro). Quando atingirmos 10k clientes, dados de margem por segmento da Tamy valem mais que qualquer pesquisa de mercado no Brasil.
+          </p>
+        </div>
+
         {/* Roadmap */}
         <div className="mt-6 reveal">
           <h3 className="text-lg font-bold text-gray-900 mb-3">Roadmap — 3 Passos</h3>

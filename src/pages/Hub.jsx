@@ -6,7 +6,7 @@ const cards = [
     to: '/fundamentos',
     emoji: '📚',
     title: 'Fundamentos',
-    desc: 'Missão, visão, valores, propósito e tech stack. 111+ skills, 6 agentes, 4-layer memory.',
+    desc: 'Missão, visão, valores, propósito e tech stack. 79+ skills, 6 agentes, 4-layer memory.',
     color: 'border-purple-500',
     textColor: 'text-purple-600',
     bg: 'hover:bg-purple-50',
@@ -59,7 +59,7 @@ const cards = [
 ]
 
 const stats = [
-  { value: '111+', label: 'Skills desenvolvidas', color: 'text-purple-600' },
+  { value: '79+', label: 'Skills desenvolvidas', color: 'text-purple-600' },
   { value: '6', label: 'Agentes especializados', color: 'text-blue-600' },
   { value: 'R$495B', label: 'TAM Brasil food service', color: 'text-emerald-600' },
   { value: '1,8M+', label: 'Estabelecimentos ativos', color: 'text-amber-600' },
