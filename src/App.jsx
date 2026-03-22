@@ -8,6 +8,7 @@ import Perguntas from './pages/Perguntas.jsx'
 import Mercado from './pages/Mercado.jsx'
 import SexyCanvas from './pages/SexyCanvas.jsx'
 import Estrategia from './pages/Estrategia.jsx'
+import Competidores from './pages/Competidores.jsx'
 
 export default function App() {
   return (
@@ -19,6 +20,7 @@ export default function App() {
         <Route path="job-description" element={<JobDescription />} />
         <Route path="perguntas" element={<Perguntas />} />
         <Route path="mercado" element={<Mercado />} />
+        <Route path="competidores" element={<Competidores />} />
         <Route path="sexy-canvas" element={<SexyCanvas />} />
         <Route path="estrategia" element={<Estrategia />} />
       </Route>

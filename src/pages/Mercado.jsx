@@ -28,7 +28,7 @@ const planos = [
     badgeBg: 'bg-purple-100 text-purple-700',
     color: 'border-purple-500',
     gradient: 'from-purple-600 to-purple-700',
-    tagline: 'Faça você mesmo com IA ao lado',
+    tagline: 'A IA faz tudo — você só confirma',
     target: 'Carlos — Bar, lanchonete, self-service, marmitaria, dark kitchen',
     faturamento: 'R$30–100k/mês',
     features: [
@@ -52,7 +52,7 @@ const planos = [
     badgeBg: 'bg-blue-100 text-blue-700',
     color: 'border-blue-500',
     gradient: 'from-blue-600 to-blue-700',
-    tagline: 'A equipe faz tudo por você',
+    tagline: 'IA + equipe humana dedicada',
     target: 'Márcia — Restaurante casual, pizzaria, hamburgueria premium',
     faturamento: 'R$100–400k/mês',
     features: [
@@ -150,7 +150,7 @@ export default function Mercado() {
       {/* COMPETITIVE MAP */}
       <div className="reveal mb-6">
         <h3 className="text-lg font-bold text-gray-900 mb-1">O que Seu Carlos Compara — 5 Alternativas Reais</h3>
-        <p className="text-gray-500 text-sm mb-4">Quando Carlos avalia a Tamy, ele não compara com o Saipos. Compara com o que usa hoje.</p>
+        <p className="text-gray-500 text-sm mb-4">Carlos não compara com Saipos. Compara com o que usa hoje. A diferença: nenhuma alternativa tem IA que faz o trabalho por ele.</p>
         <div className="overflow-x-auto card">
           <table className="w-full text-xs border-collapse">
             <thead>
@@ -167,31 +167,31 @@ export default function Mercado() {
                   alt: '📓 Caderno + feeling (atual)',
                   price: 'Grátis',
                   fail: '2h/dia no fechamento manual. Zero insight. Descobre o problema 45 dias depois.',
-                  win: 'P&L automático no WhatsApp. 5min/dia. Insight no D1.',
+                  win: 'IA faz o P&L automaticamente. Carlos confirma. 5min/dia. Insight no D1.',
                 },
                 {
                   alt: '🧾 Contador mensalista',
                   price: 'R$500–1.500/mês',
                   fail: 'Entrega balancete 45 dias depois. Não fala food service. Não dá alerta proativo.',
-                  win: '3x mais barato. Tempo real. Benchmarks específicos por segmento.',
+                  win: 'IA entrega DRE em tempo real. 3x mais barato. Benchmarks food service. Ensina o dono.',
                 },
                 {
                   alt: '💼 Conta Azul / Nibo',
                   price: 'R$89–249/mês',
                   fail: 'Genérico. Não entende CMV, não fala food. Dashboard complexo. Carlos abandona em semanas.',
-                  win: 'Especialista food service. WhatsApp (zero fricção). AI proativa.',
+                  win: 'IA especialista food service. WhatsApp nativo. Proativa: "Seu CMV subiu 4%". Zero configuração.',
                 },
                 {
                   alt: '📱 Saipos / PDV genérico',
                   price: 'R$150–300/mês',
-                  fail: 'Foco operacional (pedidos, caixa). Não resolve P&L, margem real, CMV. Agora é do iFood.',
-                  win: 'Financeiro primeiro. "Qual prato dá lucro?" não "quantos pedidos hoje?"',
+                  fail: 'Foco operacional (pedidos, caixa). Não resolve P&L, margem real, CMV. Zero AI. Agora é do iFood.',
+                  win: 'IA financeira que responde "qual prato dá lucro?" e ensina por que. Open Finance automático.',
                 },
                 {
                   alt: '📊 Planilha do YouTube',
                   price: 'Grátis',
                   fail: 'Carlos já tentou. Configuração complexa, abandona em 2 semanas. Dado morto.',
-                  win: 'Zero configuração. Foto no WhatsApp → dado lançado em 30s.',
+                  win: 'IA faz tudo: foto → categoriza → calcula. Banco conectado → reconcilia. Zero digitação.',
                 },
               ].map(({ alt, price, fail, win }, i) => (
                 <tr key={alt} className={`border-b border-gray-100 ${i % 2 === 0 ? 'bg-white' : 'bg-gray-50/30'}`}>
@@ -205,7 +205,7 @@ export default function Mercado() {
           </table>
         </div>
         <div className="mt-3 rounded-xl border border-orange-200 bg-orange-50 p-3 text-xs text-orange-900">
-          <strong>⚠️ Risco iFood+Saipos (Abril 2025):</strong> iFood adquiriu a Saipos e agora tem acesso a 300k+ restaurantes cadastrados. Se lançarem módulo financeiro via Saipos nos próximos 18-24 meses, o canal de distribuição será o maior do setor. Defesa da Tamy: velocidade de PMF + data moat de clientes ativos + especialização financeira que PDV não replica.
+          <strong>⚠️ Risco iFood+Saipos (Abril 2025):</strong> iFood adquiriu Saipos + OPDV + 3S Checkout e tem acesso a 300k+ restaurantes. Se fizer bundle financeiro nos próximos 18-24 meses, o canal de distribuição será o maior do setor. <strong>Defesa da Tamy:</strong> 79 skills AI-native + Open Finance (Pluggy) + literacia financeira acumulada. iFood pode copiar features, mas não pode copiar 18 meses de inteligência domain-specific. Análise completa em <a href="/competidores" className="text-orange-700 underline font-bold">Competidores →</a>
         </div>
       </div>
 
@@ -438,13 +438,13 @@ export default function Mercado() {
           style={{ background: 'linear-gradient(135deg, #fef3c7, #fcd34d)' }}>
           <div className="space-y-2 text-xs text-amber-900">
             <p>
-              <strong>"Toast+Ramp+Restoke+Duolingo"</strong> é como explicamos a visão para investidores e mercado tech.
+              <strong>Para investidores:</strong> "A IA financeira AI-native para food service na LATAM — 79 skills, Open Finance, multi-canal."
             </p>
             <p>
-              Para o(a) dono(a) de restaurante, somos simplesmente: <strong>"Sua inteligência financeira no WhatsApp — saiba seu lucro real, reduza custos, tome decisões com dados."</strong>
+              <strong>Para o(a) dono(a):</strong> "Sua IA que cuida do financeiro — conecta seu banco, categoriza suas despesas, calcula seu lucro e te ensina a ganhar mais. Você só confirma."
             </p>
             <p className="pt-1 border-t border-amber-300">
-              Duas línguas, uma missão.
+              Duas línguas, uma missão. <strong>A IA faz. O dono confirma.</strong>
             </p>
           </div>
         </div>
@@ -454,7 +454,7 @@ export default function Mercado() {
           style={{ background: 'linear-gradient(135deg, #f0fdfa, #ccfbf1)' }}>
           <p className="font-bold text-teal-900 text-sm mb-2">🚀 Visão de Futuro</p>
           <p className="text-teal-800 text-xs leading-relaxed">
-            Tiramos as pessoas e deixamos 100% IA recebendo, preenchendo, automatizando e gerenciando tudo. Gerentes de conta viram suporte/CS. Modelo Toast+Ramp+Restoke+Duolingo: <strong>SaaS inteligente</strong> (Ramp spending intelligence + Restoke ops) → <strong>Plataforma gamificada</strong> (Duolingo engagement) → <strong>Fintech completa</strong> (Toast endgame) → <strong>PDV integrado</strong> (futuro). Quando atingirmos 10k clientes, dados de margem por segmento da Tamy valem mais que qualquer pesquisa de mercado no Brasil.
+            <strong>Hoje:</strong> A IA categoriza despesas, calcula P&L, detecta anomalias. O dono confirma. <strong>Amanhã:</strong> Open Finance conectado — a IA já sabe que a compra aconteceu antes da foto. <strong>Depois:</strong> IA negocia com fornecedores, agenda pagamentos, otimiza cardápio, antecipa recebíveis. <strong>Endgame:</strong> O dono abre o WhatsApp e lê "Ontem você lucrou R$1.400. Renegociei carne bovina — economia de R$800/mês. Aprovado?" — e só responde "sim". A IA gerencia o financeiro inteiro. O humano cozinha.
           </p>
         </div>
 
