@@ -6,7 +6,7 @@ const cards = [
     to: '/fundamentos',
     emoji: '📚',
     title: 'Fundamentos',
-    desc: 'Missão, visão, valores, propósito e tech stack. 79+ skills, 6 agentes, 4-layer memory.',
+    desc: 'Missão AI-first, visão, valores, propósito e tech stack. 79+ skills, 6 agentes, 4-layer memory.',
     color: 'border-purple-500',
     textColor: 'text-purple-600',
     bg: 'hover:bg-purple-50',
@@ -48,13 +48,22 @@ const cards = [
     bg: 'hover:bg-amber-50',
   },
   {
+    to: '/competidores',
+    emoji: '⚔️',
+    title: 'Competidores',
+    desc: 'Análise competitiva BR + global. Por que nenhum concorrente tem AI-native + financeiro profundo + Brasil-first.',
+    color: 'border-red-500',
+    textColor: 'text-red-600',
+    bg: 'hover:bg-red-50',
+  },
+  {
     to: '/sexy-canvas',
     emoji: '🔥',
     title: 'Sexy Canvas',
     desc: '14 dimensões emocionais: 7 Pecados Capitais + 7 Criança Interior. Metodologia André Diamand.',
-    color: 'border-red-500',
-    textColor: 'text-red-600',
-    bg: 'hover:bg-red-50',
+    color: 'border-orange-500',
+    textColor: 'text-orange-600',
+    bg: 'hover:bg-orange-50',
   },
   {
     to: '/estrategia',
@@ -68,21 +77,21 @@ const cards = [
 ]
 
 const stats = [
-  { value: '79+', label: 'Skills desenvolvidas', color: 'text-purple-600' },
+  { value: '79+', label: 'Skills AI financeiras', color: 'text-purple-600' },
   { value: '6', label: 'Agentes especializados', color: 'text-blue-600' },
+  { value: '0', label: 'Concorrentes BR com AI-native', color: 'text-red-500' },
   { value: 'R$495B', label: 'TAM Brasil food service', color: 'text-emerald-600' },
-  { value: '1,8M+', label: 'Estabelecimentos ativos', color: 'text-amber-600' },
   { value: '52,7%', label: 'Empresas lideradas por mulheres', color: 'text-pink-600' },
-  { value: '254+', label: 'Test files no monorepo', color: 'text-indigo-600' },
+  { value: '2.210+', label: 'Testes automatizados', color: 'text-indigo-600' },
 ]
 
 export default function Hub() {
   return (
     <div className="animate-[slideUp_0.4s_ease-out]">
       <SectionHeader
-        label="North Star Document"
+        label="North Star Document — AI-First"
         title="Bem-vindo ao Hub"
-        desc="Toda decisão estratégica da Tamy Food parte daqui. Explore a persona unificada de Matheus Benites (CTO) e Pedro Smolka (CEO)."
+        desc="A Tamy é uma IA que gerencia o financeiro do restaurante. O(a) dono(a) só confirma. Toda decisão estratégica parte daqui."
       />
 
       {/* Callout banner */}
@@ -93,10 +102,9 @@ export default function Hub() {
         <div className="flex gap-3 items-start">
           <span className="text-2xl shrink-0">⭐</span>
           <div>
-            <p className="font-bold text-purple-900 text-sm md:text-base">Este é o North Star da Tamy Food</p>
+            <p className="font-bold text-purple-900 text-sm md:text-base">Tamy é AI-First — a IA faz, o(a) dono(a) confirma</p>
             <p className="text-purple-700 text-xs md:text-sm mt-1 leading-relaxed">
-              Toda decisão de produto, GTM, CS e pricing deve ser tomada com base nas personas, dados e hipóteses documentadas aqui.
-              Antes de qualquer feature ou campanha, pergunte: <strong>"Isso resolve a dor da Márcia ou do Carlos?"</strong>
+              Não somos um sistema com AI embutida. Somos uma <strong>IA com interface humana</strong>. 79 skills financeiras especializadas em food service. A IA categoriza, calcula, detecta anomalias, reconcilia contas e ensina o operador. Antes de qualquer feature, pergunte: <strong>"A IA resolve isso sozinha? O Carlos só precisa confirmar?"</strong>
             </p>
           </div>
         </div>

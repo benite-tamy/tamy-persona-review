@@ -8,6 +8,7 @@ const navItems = [
   { to: '/job-description', label: '📋 Job Description', accent: 'pink' },
   { to: '/perguntas', label: '12 Perguntas' },
   { to: '/mercado', label: 'Mercado & Planos' },
+  { to: '/competidores', label: '⚔️ Competidores', accent: 'red' },
   { to: '/sexy-canvas', label: '🔥 Sexy Canvas', accent: 'red' },
   { to: '/estrategia', label: '🚀 Estratégia', accent: 'green' },
 ]
@@ -54,11 +55,11 @@ export default function Layout() {
           </div>
 
           <h1 className="text-2xl sm:text-3xl md:text-4xl font-black tracking-tight mb-2 text-white">
-            Persona Unificada — Missão 2
+            Persona Unificada — AI-First
           </h1>
           <p className="text-purple-200 text-sm md:text-base font-medium max-w-2xl leading-relaxed">
-            Toast + Ramp + Restoke + Duolingo para gastronomia na LATAM.<br className="hidden sm:block" />
-            <span className="text-purple-100 font-semibold">Inteligência financeira no WhatsApp em 5 minutos/dia.</span>
+            O copiloto financeiro AI-native para food service no Brasil.<br className="hidden sm:block" />
+            <span className="text-purple-100 font-semibold">A IA faz. O(a) dono(a) confirma. 79 skills. Zero esforço.</span>
           </p>
 
           {/* Founder badges */}
@@ -119,7 +120,7 @@ export default function Layout() {
       <footer className="border-t border-gray-200 bg-white py-6 px-4 text-center text-xs text-gray-400">
         <p className="font-semibold text-gray-500">Tamy Food · Persona Unificada · Start Growth Academy 2026</p>
         <p className="mt-1">
-          Toast + Ramp + Restoke + Duolingo para gastronomia na LATAM.
+          Copiloto financeiro AI-native para food service na LATAM.
           &nbsp;·&nbsp;
           <a href="https://github.com/benite-tamy/tamy-persona-review" target="_blank" rel="noreferrer"
             className="text-purple-500 hover:underline">GitHub</a>

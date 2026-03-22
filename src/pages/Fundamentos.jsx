@@ -2,12 +2,12 @@ import SectionHeader from '../components/SectionHeader.jsx'
 import Panel from '../components/Panel.jsx'
 
 const valores = [
-  { title: 'Valor em minutos, não semanas', desc: 'Se o produto não entrega valor em 5 minutos, a gente falhou. Onboarding radical é inegociável.', color: 'border-blue-500' },
-  { title: 'AI que age, não só reporta', desc: 'Não é dashboard bonito. É copilot proativo como Ramp: spending intelligence automatizada, insights prescritivos, gamificação Duolingo. "Seu CMV subiu 4% — quer ver o que mudou?"', color: 'border-purple-500' },
-  { title: 'Obsessão pelo(a) dono(a) independente', desc: 'O cara que acorda 5h e dorme 1h. A mãe solo que acorda 5h pra levar filho na escola. Todo produto passa pelo filtro: "facilita a vida DELA? E DELE?"', color: 'border-emerald-500' },
-  { title: 'Verdade brutal com compaixão', desc: '"Você está perdendo R$3.200/mês nesse prato." Mas sempre com o caminho: "Se ajustar o preço em 12%, a margem volta."', color: 'border-amber-500' },
-  { title: 'Engenharia como vantagem competitiva', desc: 'AI-first de verdade — 79+ skills, 6 agentes, 2.210+ testes, 4-layer memory. Profundidade técnica que incumbentes não copiam em 12 meses.', color: 'border-red-500' },
-  { title: 'Velocidade > Perfeição', desc: 'Ship rápido, aprenda rápido, corrija rápido. 80% no mercado > 100% na garagem. Nosso risco é execução comercial, não técnica.', color: 'border-slate-500' },
+  { title: 'AI faz, humano confirma', desc: 'A IA categoriza despesas, calcula P&L, detecta anomalias, reconcilia contas e precifica pratos. O(a) dono(a) só confirma. 95% automação, 5% decisão humana. Modelo HITL (Human-in-the-Loop) em toda ação financeira.', color: 'border-purple-500' },
+  { title: 'AI que ensina, não só mostra', desc: '"Seu CMV está em 42%. O ideal para bar é 28-35%. Se renegociar carne com fornecedor X, economiza R$1.200/mês." A IA não só detecta o problema — explica o que significa e o que fazer. O dono fica mais inteligente a cada interação.', color: 'border-blue-500' },
+  { title: 'Valor em minutos, não semanas', desc: 'Se o produto não entrega valor em 5 minutos, a gente falhou. Foto no WhatsApp → despesa categorizada em 30 segundos. Banco conectado → P&L automático. Zero configuração.', color: 'border-emerald-500' },
+  { title: 'Obsessão pelo(a) dono(a) independente', desc: 'O cara que acorda 5h e dorme 1h. A mãe solo que acorda 4h45 pra produzir marmitas. Todo produto passa pelo filtro: "a IA resolve isso sozinha? ELE/ELA só precisa confirmar?"', color: 'border-pink-500' },
+  { title: 'Verdade brutal com compaixão', desc: '"Você está perdendo R$3.200/mês nesse prato." Mas sempre com o caminho: "Se ajustar o preço em 12%, a margem volta. Quer que eu simule?" A IA propõe a ação, o dono decide.', color: 'border-amber-500' },
+  { title: 'Engenharia como moat', desc: '79+ skills especializadas, 6 agentes, 2.210+ testes, 4-layer memory, Open Finance via Pluggy. Profundidade técnica que nenhum concorrente BR replica em 18+ meses.', color: 'border-red-500' },
 ]
 
 const techStack = [
@@ -92,9 +92,9 @@ export default function Fundamentos() {
   return (
     <div>
       <SectionHeader
-        label="Missão 1 — Os Sócios"
+        label="AI-First Foundation"
         title="Fundamentos da Tamy Food"
-        desc="Missão, visão, valores, propósito e objetivos — base estratégica do negócio"
+        desc="A IA faz. O(a) dono(a) confirma. Missão, visão, valores e tech stack de uma empresa AI-native para food service."
       />
 
       {/* Missão + Visão */}
@@ -102,14 +102,14 @@ export default function Fundamentos() {
         <Panel style={{ borderTop: '4px solid hsl(255,55%,52%)' }}>
           <span className="section-label">01 — Missão</span>
           <div className="text-sm font-bold text-purple-700 bg-purple-50 rounded-xl p-3 mb-3">
-            Eliminar a morte silenciosa de restaurantes por falta de inteligência financeira e operacional.
+            Eliminar a morte silenciosa de restaurantes usando IA que gerencia as finanças autonomamente.
           </div>
           <p className="text-gray-600 text-sm leading-relaxed mb-3">
-            82% dos restaurantes que fecham citam gestão financeira como causa. Não é falta de talento culinário, não é falta de cliente. É falta de visibilidade.
+            82% dos restaurantes que fecham citam gestão financeira como causa. Não é falta de talento culinário — é falta de uma IA que cuide do financeiro enquanto o(a) dono(a) cuida do que sabe fazer: cozinhar, servir e encantar.
           </p>
           <div className="bg-gray-50 rounded-xl p-3 border-l-4 border-purple-400">
             <p className="text-xs text-gray-700 italic leading-relaxed">
-              "Democratizar inteligência financeira e operacional para negócios de alimentação na América Latina, usando AI para que nenhum restaurante feche por falta de informação — começando pelo Brasil."
+              "Ser a IA que gerencia o financeiro de todo restaurante independente na América Latina — automatizando, ensinando e protegendo o(a) dono(a) de decisões cegas. A IA faz o trabalho pesado. O humano confirma e aprende."
             </p>
           </div>
         </Panel>
@@ -117,16 +117,20 @@ export default function Fundamentos() {
         <Panel style={{ borderTop: '4px solid #2563EB' }}>
           <span className="section-label text-blue-600">02 — Visão de Futuro</span>
           <div className="text-sm font-bold text-blue-700 bg-blue-50 rounded-xl p-3 mb-3">
-            Ser o sistema operacional completo — financeiro, operacional e fintech — de todo negócio de alimentação independente na América Latina.
+            A IA que faz todo restaurante independente ter gestão financeira de multinacional — sem o dono precisar entender de finanças.
           </div>
           <div className="space-y-2 text-xs text-gray-600">
             <div className="flex gap-2">
+              <span className="font-bold text-blue-600 shrink-0">Hoje:</span>
+              <span>A IA categoriza, calcula e alerta. O dono confirma. 79 skills financeiras + Open Finance (Pluggy) + WhatsApp.</span>
+            </div>
+            <div className="flex gap-2">
               <span className="font-bold text-blue-600 shrink-0">5 anos:</span>
-              <span>50.000+ restaurantes na LATAM. Embedded finance gerando 2-3x o ARR de SaaS. O "Toast+Ramp+Restoke+Duolingo da gastronomia LATAM".</span>
+              <span>IA autônoma: negocia com fornecedores, paga contas, otimiza cardápio, antecipa recebíveis. 50.000+ restaurantes na LATAM. Embedded finance.</span>
             </div>
             <div className="flex gap-2">
               <span className="font-bold text-blue-600 shrink-0">10 anos:</span>
-              <span>Tamy é sinônimo de gestão inteligente para food service na LatAm. PDV integrado como extensão natural.</span>
+              <span>Tamy é o CFO de IA de todo restaurante na LATAM. O dono só precisa cozinhar — a Tamy cuida do resto.</span>
             </div>
           </div>
         </Panel>
@@ -147,14 +151,14 @@ export default function Fundamentos() {
         <Panel style={{ borderTop: '4px solid #F59E0B' }}>
           <span className="section-label text-amber-600">05 — Objetivo de Verdade</span>
           <div className="text-sm font-bold text-amber-700 bg-amber-50 rounded-xl p-3 mb-3">
-            Construir a empresa de tecnologia para food service mais importante da América Latina.
+            Construir a IA financeira mais inteligente do food service na América Latina.
           </div>
           <div className="space-y-2 text-xs text-gray-600">
             <div className="bg-green-50 rounded-lg p-2 border-l-2 border-green-400">
-              <strong className="text-green-700">O que já temos:</strong> Produto técnico robusto (79+ skills, 6 agentes, 254+ test files). Motor de Ferrari na garagem.
+              <strong className="text-green-700">O que já temos:</strong> 79+ skills AI financeiras, 6 agentes especializados, Open Finance (Pluggy), 4-layer memory, 2.210+ testes, multimodal (foto → despesa em 30s). A IA mais completa para food service BR.
             </div>
             <div className="bg-amber-50 rounded-lg p-2 border-l-2 border-amber-400">
-              <strong className="text-amber-700">O que falta:</strong> GTM execution — ir ao mercado, validar PMF, construir máquina de aquisição.
+              <strong className="text-amber-700">O que falta:</strong> GTM execution — ir ao mercado com a mensagem "a IA faz tudo, você só confirma". Validar PMF com 50-100 donos reais.
             </div>
           </div>
         </Panel>
@@ -282,26 +286,32 @@ export default function Fundamentos() {
           {[
             {
               id: 'A',
-              title: '🧠 Multi-Agent System (LangGraph)',
-              desc: '6 agentes especializados com 79+ skills em produção. Pipeline: Intent Router (L0-L4) → Plan Executor → Action Gate (HITL) → Summarizer. Respostas simples em <200ms. Ações financeiras com confirmação humana.',
+              title: '🧠 Multi-Agent System (AI-First)',
+              desc: '6 agentes especializados com 79+ skills financeiras. A IA decide o que fazer, executa 95% do trabalho, e pede confirmação humana apenas para ações críticas (HITL). Intent Router (L0-L4) → Plan Executor → Action Gate → Summarizer. Respostas simples em <200ms.',
               color: 'border-purple-500',
             },
             {
               id: 'B',
-              title: '💾 4-Layer Memory (diferenciador)',
-              desc: 'Working Memory (Redis, per-conversation) → Episodic Memory (PostgreSQL, cross-conversation, 30d TTL) → Semantic Memory (Weaviate vectors, per-tenant). Quanto mais o(a) dono(a) usa, mais a Tamy entende o negócio. Inclui Reflection System — IA auto-melhora com quality gate (score ≥ 4.0).',
+              title: '💾 4-Layer Memory (a IA aprende sobre seu negócio)',
+              desc: 'Working Memory (Redis) → Episodic Memory (PostgreSQL) → Semantic Memory (Weaviate vectors). A IA lembra do padrão de compras do Carlos, dos fornecedores da Márcia, da sazonalidade de cada restaurante. Quanto mais usa, mais inteligente fica. Inclui Reflection System — IA se auto-melhora.',
               color: 'border-blue-500',
             },
             {
+              id: 'E',
+              title: '🏦 Open Finance (Pluggy) — automação bancária',
+              desc: 'Conecta as contas bancárias do(a) dono(a) via Pluggy. A IA reconcilia iFood/Rappi com extrato automaticamente. Detecta taxas indevidas. Identifica discrepâncias. O dono não precisa digitar nada — os dados financeiros fluem automaticamente.',
+              color: 'border-emerald-500',
+            },
+            {
               id: 'C',
-              title: '📄 Multimodal Pipeline',
-              desc: 'OCR + entity extraction via Claude Vision. 16 skills multimodais: OCR, áudio, PDF, planilhas, batch. Foto de nota → despesa categorizada em 30s. Batch processing para múltiplos documentos simultaneamente.',
+              title: '📄 Multimodal Pipeline (foto → dado em 30s)',
+              desc: 'OCR + entity extraction via Claude Vision. 16 skills multimodais: OCR, áudio, PDF, planilhas, batch. Carlos fotografa a nota → a IA categoriza, extrai itens, calcula custo e atualiza o P&L. Zero digitação.',
               color: 'border-amber-500',
             },
             {
               id: 'D',
               title: '🏗️ Infra Production-Ready',
-              desc: 'Monorepo Turborepo com 10 apps. NestJS (API) + FastAPI (Brain) + Go (ETL/Indexação). PostgreSQL + Redis + Weaviate + Neo4j + RabbitMQ. Docker, CI/CD, Sentry + Langfuse + Grafana. 2.210+ testes automatizados.',
+              desc: 'Monorepo Turborepo com 10 apps. NestJS (API) + FastAPI (Brain AI) + Go (ETL/Indexação). PostgreSQL + Redis + Weaviate + Neo4j + RabbitMQ. 2.210+ testes automatizados. Sentry + Langfuse + Grafana.',
               color: 'border-green-500',
             },
           ].map(({ id, title, desc, color }) => (
@@ -313,7 +323,7 @@ export default function Fundamentos() {
         </div>
         <div className="mt-3 rounded-xl border border-purple-200 bg-purple-50 p-3">
           <p className="text-xs text-purple-900 leading-relaxed">
-            <strong>Insight Sexy Canvas:</strong> Essa profundidade técnica é invisível pro(a) dono(a) — e DEVE ser. Ele/ela vê "foto no WhatsApp = despesa em 30 segundos". Por trás tem Claude Vision + entity extraction + HITL confirmation. A complexidade interna é o moat. A simplicidade externa é a venda. <strong>Preguiça (5/5) na UX, Engenharia (5/5) no backend.</strong>
+            <strong>O Paradigma AI-First:</strong> Toda essa engenharia é invisível pro(a) dono(a) — e DEVE ser. Ele/ela vê "foto no WhatsApp = despesa em 30 segundos" e "banco conectado = P&L automático". Por trás tem 6 agentes, 79 skills, Claude Vision, Pluggy Open Finance e 4-layer memory. <strong>A complexidade interna é o moat. A simplicidade externa é a venda. A IA faz tudo. O dono só confirma.</strong>
           </p>
         </div>
       </div>
