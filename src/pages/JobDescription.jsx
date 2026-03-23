@@ -1,6 +1,9 @@
 import SectionHeader from '../components/SectionHeader.jsx'
 import Panel from '../components/Panel.jsx'
 import StatCard from '../components/StatCard.jsx'
+import ExportButtons from '../components/ExportButtons.jsx'
+import { exportJobDescriptionToPDF } from '../utils/exportToPDF.js'
+import { exportJobDescriptionToDocx } from '../utils/exportToDocx.js'
 
 // ---------------------------------------------------------------------------
 // Sub-components
@@ -340,10 +343,51 @@ const metricasPersona = [
 ]
 
 // ---------------------------------------------------------------------------
+// Export data builders
+// ---------------------------------------------------------------------------
+
+function buildExportPersonas() {
+  return [
+    {
+      name: 'Dona Márcia — ICP Beta (Persona Primária)',
+      sections: [
+        { label: 'Responsabilidades', items: marciaResponsabilidades },
+        { label: 'Ferramentas que tem', items: marciaTem },
+        { label: 'O que falta', items: marciaFalta },
+        { label: 'Perfil pessoal', items: marciaPerfil.map(p => ({ label: p.label, desc: p.desc })) },
+        { label: 'Motivações e Sonhos', items: marciaMotivacoes },
+        { label: 'Dia na Vida — Antes', items: marciaDiaAntes.map(d => `${d.time}: ${d.text}`) },
+        { label: 'Dia na Vida — Depois (com Tamy)', items: marciaDiaDepois.map(d => `${d.time}: ${d.text}`) },
+        { label: 'ROI Estimado', items: marciaROI.map(r => `${r.value} — ${r.label}`) },
+        { label: 'Objeções + Respostas', items: marciaObjecoes.map(o => `"${o.question}" → ${o.answer}`) },
+        { label: 'Por que competidores falham', items: marciaCompetidores.map(c => `${c.competitor}: ${c.reason}`) },
+      ],
+    },
+    {
+      name: 'Seu Carlos — ICP Alpha',
+      sections: [
+        { label: 'Responsabilidades', items: carlosResponsabilidades },
+        { label: 'Ferramentas que tem', items: carlosTem },
+        { label: 'O que falta', items: carlosFalta },
+        { label: 'Perfil pessoal', items: carlosPerfil.map(p => ({ label: p.label, desc: p.desc })) },
+        { label: 'Motivações e Sonhos', items: carlosMotivacoes },
+        { label: 'Dia na Vida — Antes', items: carlosDiaAntes.map(d => `${d.time}: ${d.text}`) },
+        { label: 'Dia na Vida — Depois (com Tamy)', items: carlosDiaDepois.map(d => `${d.time}: ${d.text}`) },
+        { label: 'ROI Estimado', items: carlosROI.map(r => `${r.value} — ${r.label}`) },
+        { label: 'Objeções + Respostas', items: carlosObjecoes.map(o => `"${o.question}" → ${o.answer}`) },
+        { label: 'Por que competidores falham', items: carlosCompetidores.map(c => `${c.competitor}: ${c.reason}`) },
+      ],
+    },
+  ]
+}
+
+// ---------------------------------------------------------------------------
 // Page component
 // ---------------------------------------------------------------------------
 
 export function JobDescription() {
+  const exportPersonas = buildExportPersonas()
+
   return (
     <div>
       {/* ------------------------------------------------------------------ */}
@@ -354,6 +398,13 @@ export function JobDescription() {
         title="Job Description — Nossas Personas"
         desc="Se fossemos contratar nossas personas, esse seria o cargo. Guia completo para vendas, marketing e produto."
       />
+
+      <div className="flex justify-end mb-4">
+        <ExportButtons
+          onExportPDF={() => exportJobDescriptionToPDF(exportPersonas)}
+          onExportDocx={() => exportJobDescriptionToDocx(exportPersonas)}
+        />
+      </div>
 
       {/* ------------------------------------------------------------------ */}
       {/* 2. Por que Marcia Primeiro */}

@@ -1,5 +1,8 @@
 import { useState } from 'react'
 import SectionHeader from '../components/SectionHeader.jsx'
+import ExportButtons from '../components/ExportButtons.jsx'
+import { exportPerguntasToPDF } from '../utils/exportToPDF.js'
+import { exportPerguntasToDocx } from '../utils/exportToDocx.js'
 
 const Tag = ({ type, children }) => {
   const colors = {
@@ -458,6 +461,13 @@ export default function Perguntas() {
         title="12 Perguntas da Persona"
         desc="Dores, medos, perigos, oportunidades, sonhos, preconceitos, desafios, decisão, objetivos e ICPs — perspectivas consolidadas de Pedro Smolka (CEO) e Matheus Benites (CTO)"
       />
+
+      <div className="flex justify-end mb-4">
+        <ExportButtons
+          onExportPDF={() => exportPerguntasToPDF(perguntas)}
+          onExportDocx={() => exportPerguntasToDocx(perguntas)}
+        />
+      </div>
 
       <div className="space-y-3 mb-6">
         {perguntas.map(p => <PerguntaCard key={p.num} p={p} />)}
